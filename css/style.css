@@ -12,6 +12,10 @@ a:link, a:visited,  a:hover, a:active{
     text-decoration: none;
 }
 
+body {
+    background-color: #f7f9f9;
+}
+
 header{
     width: 100%;
     height: 100px;
@@ -170,22 +174,19 @@ nav ul li:hover .nav_btn{
 
 .biocenter{
     width: 100%;
-    padding-bottom: 60px;
 }
 
 .container_biocenter{
     max-width: 1600px;
-    height: 500px;
     margin: auto;
-    padding: 0px 30px;
-    position: relative;
     display: flex;
-    border: solid black;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .biocenter_text{
     color: #373737;
+    width: 100%;
+    padding-left: 30px;
 }
 
 .biocenter_text h2{
@@ -200,18 +201,276 @@ nav ul li:hover .nav_btn{
 .biocenter_text h3{
     font-size: 25px;
     padding-bottom: 10px;
+    font-weight: 400;
 }
 
 .biocenter_text p{
     font-size: 20px;
+    font-weight: 300;
     width: 800px;
 }
 
 .container_biocenter img{
-    width: 700px;
+    width: 600px;
+    position: relative;
+}
+
+.biocenter_text_img{
+    display: flex;
+    justify-content: center;
+}
+
+/*PILARES */
+
+.pilares{
+    width: 100%;
+}
+
+.container_pilares{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.pilar_group{
+    display: flex;
+    width: 100%;
+}
+
+.pilar_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    color: #f7f9f9;
+    transition: all 300ms;
+}
+
+.pilar_element span{
+    font-size: 80px;
+    padding: 20px 0px;
+}
+
+.pilar_element p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pilar_ciencia{
+    background: #64b1b3;
+}
+
+.pilar_etica{
+    background: #78d5d7;
+}
+
+.pilar_profesionalismo{
+    background: #84e9ec;
+}
+
+.pilar_calidez{
+    background: #beebec;
+}
+
+/* FRASE */
+
+.frase{
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.container_frase{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.container_frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* fondo */
+    background-image: linear-gradient(rgba(49, 140, 192, 0.2), rgba(0, 0, 0, 0.5)), url("../img/img-concepcion.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    transition: all 300ms;
+}
+
+.container_frase p{
+    padding: 0px 180px;
+    text-align: center;
+    color: #f7f9f9;
+    font-size: 35px;
+    font-weight: 300;
+    text-shadow: 0px 2px 4px rgba(196, 209, 215, 0.3);
+}
+
+/* ENSAYOS CLINICOS */
+
+.ensayos{
+    width: 100%;
+}
+
+.container_ensayos{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.ensayos_text{
+    color: #373737;
+    padding-left: 30px;
+}
+
+
+.ensayos_text h3{
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: #78d5d7;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.ensayos_text p{
+    font-size: 20px;
+    width: 900px;
+    font-weight: 300;
+}
+
+.container_ensayos img{
+    width: 100%;
+}
+
+.container_ensayos_img{
+    width: 100%;
+    position: relative;
+}
+
+.container_ensayos_img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* PORQUE BIOCENTER */
+
+.porque{
+    width: 100%;
+}
+
+.container_porque{
+    max-width: 1600px;
+    margin: auto;
+    background: rgb(98,177,179);
+    background: linear-gradient(351deg, rgba(98,177,179,1) 54%, rgba(120,213,215,1) 100%);
+    color: #373737;
+}
+
+.container_porque h3{
+    padding: 50px 0px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 2px 4px rgba(83, 85, 86, 0.3);
+    color: #f7f9f9;
+    font-size: 40px;
+}
+
+.porque_element_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.porque_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #f7f9f9;
+    margin: 0px 10px 20px 10px;
+    height: 40vh;
+    transition: all 300ms;
+}
+
+.porque_element h4{
+    text-transform: uppercase;
+    padding: 10px 0px;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 300ms;
+}
+
+.porque_element p{
+    text-align: center;
+    padding: 0px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 300ms;
+}
+
+    .porque_element span{
+    background-attachment: fixed;
+    color: #f7f9f9;
+    background-color: #78d5d7;
+    font-size: 70px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 300ms;
 }
 
 /* MEDIA QUERYS */
+
+@media screen and (max-width: 1435px) {
+    .container_biocenter{
+        flex-direction: column;
+    }
+
+    .container_pilares img{
+        height: 40vh;
+    }
+
+    .container_ensayos{
+        flex-direction: column;
+    }
+
+    .container_ensayos_img{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container_ensayos_img img{
+        width: 100vh;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .biocenter_text p{
+        width: 700px;
+    }
+
+    .ensayos_text p{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container_frase p{
+        font-size: 20px;
+        padding: 0px 30px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .container_nav{
@@ -276,19 +535,121 @@ nav ul li:hover .nav_btn{
 
     .biocenter_text{
         text-align: center;
+        padding-right: 30px;
     }
 
     .biocenter_text p{
-        font-size: 15px;
+        font-size: 18px;
         width: 100%;
-        
     }
 
     .container_biocenter img{
         width: 100%;
     }
 
+    .container_ensayos img{
+        width: 100%;
+    }
+
+    /* pilares */
+
+    .container_pilares{
+        flex-direction: column;
+    }
+
+    .pilar_element{
+        height: 250px;
+    }
+    
+    /* FRASE */
+
+    .container_frase{
+        background-size: cover;
+        height: 50vh;
+    }
+
+    /* ensayos */
+
+    .container_ensayos{
+        flex-direction: column;
+    }
+
+    .ensayos_text{
+        text-align: center;
+        padding-right: 30px;
+    }
+
+    .ensayos_text h3{
+        font-size: 28px;
+    }
+
+    .ensayos_text p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .container_ensayos img{
+        width: 500px;
+    }
+
+    /* PORQUE */
+
+    .container_porque h3{
+        padding: 40px 0px;
+        font-size: 30px;
+    }
+
+    .porque_element h4{
+        font-size: 18px;
+    }
+
+    .porque_element p{
+        font-size: 14px;
+    }
 }
+
+@media screen and (max-width: 430px) {
+    .container_ensayos img{
+        width: 100%;
+    }
+
+    .porque_element h4{
+        font-size: 14px;
+    }
+
+    .porque_element p{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .container_frase p{
+        font-size: 15px;
+    }
+
+    .pilar_element p{
+        font-size: 15px;
+    }
+
+    .porque_element h4{
+        font-size: 12px;
+    }
+
+    .porque_element p{
+        font-size: 10px;
+    }
+
+    .porque_element span{
+        font-size: 50px;
+        padding: 10px;
+    }
+
+
+}
+
+
+
 
 /* CLASES IMAGINARIAS */
 
