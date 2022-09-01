@@ -8,10 +8,13 @@
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <title>BIOCENTER</title>
 </head>
@@ -39,7 +42,7 @@
     <div class="container_all" id="container_all">
         <section class="cover">
             <div class="container_cover">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
 
                     <div class="carousel-inner">
                         <div class="">
@@ -90,7 +93,11 @@
                 <div class="biocenter_text">
                     <h2> <span>BIO</span>CENTER</h2>
                     <h3>Centro Clínico de Investigación</h3>
-                    <p>Somos un Centro Clínico de Investigación, nacido en la capital de la Octava Región de Chile, Concepción. Nuestro objetivo es participar y conducir estudios clínicos nacionales e internacionales, con personal altamente calificado para dicho propósito, evaluando la eficacia y seguridad de medicamentos para el tratamiento de diversos tipos de cáncer y otras patologías no oncológicas, con un fuerte apego a las buenas prácticas clínicas y a la bioética.</p>
+                    <p>Somos un Centro Clínico de Investigación, nacido en la capital de la <b>Octava Región de Chile,
+                            Concepción</b>. Nuestro objetivo es participar y conducir estudios clínicos nacionales e
+                        internacionales, con personal altamente calificado para dicho propósito, evaluando la eficacia y
+                        seguridad de medicamentos para el tratamiento de diversos tipos de cáncer y otras patologías no
+                        oncológicas, con un fuerte apego a las buenas prácticas clínicas y a la bioética.</p>
                 </div>
                 <div class="biocenter_text_img">
                     <img src="./img/biocenter.png" alt="">
@@ -108,7 +115,7 @@
                     <div class="pilar_element pilar_etica">
                         <span class="material-symbols-outlined">balance</span>
                         <p>ética</p>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="pilar_group">
                     <div class="pilar_element pilar_profesionalismo">
@@ -118,14 +125,16 @@
                     <div class="pilar_element pilar_calidez">
                         <span class="material-symbols-outlined">favorite</span>
                         <p>calidez</p>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="frase">
             <div class="container_frase">
-                <p>BIOCENTER es el primer centro clínico de investigación en Concepción, implementado con altos estándares en gestión de calidad, ética y profesionalismo del equipo, donde el paciente y su dignidad es nuestra principal preocupación.</p>
+                <p>BIOCENTER es el primer centro clínico de investigación en Concepción, implementado con altos
+                    estándares en gestión de calidad, ética y profesionalismo del equipo, donde el paciente y su
+                    dignidad es nuestra principal preocupación.</p>
             </div>
         </section>
 
@@ -133,12 +142,16 @@
             <div class="container_ensayos">
                 <div class="ensayos_text">
                     <h3>¿Qué son los ensayos clínicos?</h3>
-                    <p>Somos un Centro Clínico de Investigación, nacido en la capital de la Octava Región de Chile, Concepción. Nuestro objetivo es participar y conducir estudios clínicos nacionales e internacionales, con personal altamente calificado para dicho propósito, evaluando la eficacia y seguridad de medicamentos para el tratamiento de diversos tipos de cáncer y otras patologías no oncológicas, con un fuerte apego a las buenas prácticas clínicas y a la bioética.</p>
+                    <p>Somos un Centro Clínico de Investigación, nacido en la capital de la Octava Región de Chile,
+                        Concepción. Nuestro objetivo es participar y conducir estudios clínicos nacionales e
+                        internacionales, con personal altamente calificado para dicho propósito, evaluando la eficacia y
+                        seguridad de medicamentos para el tratamiento de diversos tipos de cáncer y otras patologías no
+                        oncológicas, con un fuerte apego a las buenas prácticas clínicas y a la bioética.</p>
                 </div>
                 <div class="container_ensayos_img">
                     <img src="./img/ensayos.png" alt="">
                 </div>
-                
+
             </div>
         </section>
 
@@ -174,13 +187,165 @@
             </div>
         </section>
 
-    </div>
+    <section class="swiper_section">
+        <div class="container_swiper">
+            <div class="container_title"><h3>nuestro equipo</h3></div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/jmiranda.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">director ejecutivo</p>
+                                <p class="nombre">jorge miranda yáñez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/drarodriguez.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">Director Médico</p>
+                                <p class="nombre">Ester Rodriguez de Vásquez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/drcompan.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">Subdirector Médico</p>
+                                <p class="nombre">Alvaro Compán Jiménez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/mariajose.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">Enfermera Coordinadora</p>
+                                <p class="nombre">M. José Sepúlveda Serrano</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/cbelmar.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">Enfermera Clínica</p>
+                                <p class="nombre">Carolina Belmar Caamaño</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team_card">
+                            <img src="./img/equipo/efuenzalida.jpg" alt="">
+                            <div class="description">
+                                <p class="cargo">TENS</p>
+                                <p class="nombre">Evelyne Fuenzalida Araneda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
 
+        </div>
+    </section>
 
+    <section class="rrss">
+        <div class="container_rrss">
+            <h3>siguenos en redes</h3>
+            <div class="container_icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container_footer">
+            <div class="footer_info">
+                <img src="./img/logos/logo-vertical-blanco.png" alt="">
+                <div class="footer_links">
+                    <div class="footer_row">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <a target="_blank" href="https://goo.gl/maps/DLA9LBs4oufcphHK9">Lincoyán 334, piso 7. Concepción</a>
+                    </div>
+                    <div class="footer_row">
+                        <span class="material-symbols-outlined">mail</span>
+                        <a href="mailto:contacto@biocenter.cl">contacto@biocenter.cl</a>
+                    </div>
+                    <div class="footer_row">
+                        <span class="material-symbols-outlined">phone_in_talk</span>
+                        <a href="tel:+56965271431">+56 9 6527 1431</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_rrss">
+                <div class="container_icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
 
     <script src="./js/script.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                "@1.00": {  //1.00 = 643
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                "@1.20": {  //1.00 = 643
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+
+
 </body>
 
 </html>
