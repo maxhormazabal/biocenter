@@ -11,6 +11,32 @@ window.onscroll = function(){
     }
 }
 
+// Scroll Up
+
+document.getElementById("button_up").addEventListener("click",scrollUp)
+
+buttonUp = document.getElementById("button_up");
+
+function scrollUp(){
+    currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll>0){
+        window.scrollTo (0,0);
+        buttonUp.style.transform = "scale(0)";
+    }
+}
+
+window.onscroll = function(){
+    scroll = document.documentElement.scrollTop;
+
+    if (scroll > 100){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
+}
+
+
 document.getElementById("btn_menu").addEventListener("click",mostrar_menu)
 
 menu = document.getElementById("header");
@@ -32,3 +58,4 @@ window.addEventListener("resize", function(){
         nav.classList.remove('move_nav');
     }
 })
+
