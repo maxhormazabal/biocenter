@@ -841,6 +841,18 @@ footer {
     .container_ensayos_img img {
         width: 100vh;
     }
+
+    .porque_element h4 {
+        font-size: 20px;
+    }
+
+    .porque_element p {
+        font-size: 15px;
+    }
+
+    .porque_element span {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -865,13 +877,27 @@ footer {
         }
     
         .description .cargo{
-            font-size: 3vw;
+            font-size: 2vw;
         }
         
         .description .nombre{
-            font-size: 4vw;
-            padding-bottom: 20px;
+            font-size: 1.5vw;
+            padding-bottom: 5px;
         }
+
+        .porque_element h4 {
+            font-size: 18px;
+        }
+    
+        .porque_element p {
+            font-size: 12px;
+        }
+    
+        .porque_element span {
+            font-size: 50px;
+        }
+    
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1009,11 +1035,15 @@ footer {
     }
 
     .porque_element h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .porque_element p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .porque_element span {
+        font-size: 40px;
     }
 
     .container_contacto_porque p{
@@ -1036,17 +1066,17 @@ footer {
     /* TEAM */
 
     .team_card img{
-        width: 250px;
+        width: 180px;
         border-radius: 25px;
     }
 
     .description .cargo{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     
     .description .nombre{
-        font-size: 4vw;
-        padding-bottom: 20px;
+        font-size: 2vw;
+        padding-bottom: 5px;
     }
 
     /* FOOTER */
@@ -1101,6 +1131,28 @@ footer {
     
 }
 
+@media screen and (max-width: 690px) {
+    .team_card img{
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width: 525px) {
+    .team_card img{
+        width: 250px;
+    }
+    .description .cargo{
+        font-size: 4vw;
+    }
+    
+    .description .nombre{
+        font-size: 3vw;
+        padding-bottom: 20px;
+    }
+
+}
+
 @media screen and (max-width: 430px) {
     .container_ensayos img {
         width: 100%;
@@ -1142,6 +1194,9 @@ footer {
         transform: scale(0.65);
     }
 
+    .team_card img{
+        width: 150px;
+    }
 }
 
 
