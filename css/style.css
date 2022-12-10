@@ -26,7 +26,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 30;
     background-color: #f7f9f9;
     transition: all 0.5s;
 }
@@ -619,6 +619,18 @@ nav ul li:hover .nav_btn {
 .swiper-button-next{
     color: #5A9C9F;
 }
+
+/* FAQS */
+
+.faq {
+    width: 100%;
+}
+
+.container_faq {
+    max-width: 1600px;
+    margin: auto;
+}
+
 
 /* CONTACTO */
 
@@ -1213,4 +1225,93 @@ footer {
 
 .move_content {
     right: 200px;
+}
+
+
+/* VENTANAS FLOTANTES */
+
+.floating-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    z-index: 32;
+  }
+
+  .floating-box {
+  border-radius: 10px;
+}
+
+  .floatin-box_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Estilo para la capa de sombra */
+  .shadow-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, 0.5);
+    z-index: 31;
+  }
+
+  .description button{
+    border: 1px solid #f7f9f9;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f7f9f9;
+    margin-top: 20px;
+  }
+
+  .floating-box{
+    background: rgb(98, 177, 179);
+    background: linear-gradient(351deg, rgb(85, 148, 149) 54%, rgba(120, 213, 215, 1) 100%);
+  }
+
+  .floating-box button{
+    border: none;
+    background-color: transparent;
+    color: #f7f9f9;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .floating-box button span{
+    font-size: 2.5vw;
+  }
+
+.floating-box img{
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.floating-box .cargo{
+    font-size: 1.6vw;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.floating-box .nombre{
+    font-size: 1.6vw;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.floating-box .curriculum{
+    font-size: 1.2vw;
+    text-align: center;
+    width: 90%;
 }

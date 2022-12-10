@@ -211,7 +211,9 @@
                             <div class="description">
                                 <p class="cargo">director ejecutivo</p>
                                 <p class="nombre">jorge miranda yáñez</p>
+                                <button onclick="showFloatingBox1()">Saber más</button>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -220,6 +222,7 @@
                             <div class="description">
                                 <p class="cargo">Director Médico</p>
                                 <p class="nombre">Esther Rodriguez de Vásquez</p>
+                                <button onclick="showFloatingBox2()">Saber más</button>
                             </div>
                         </div>
                     </div>
@@ -229,6 +232,7 @@
                             <div class="description">
                                 <p class="cargo">Subdirector Médico</p>
                                 <p class="nombre">Alvaro Compán Jiménez</p>
+                                <button onclick="showFloatingBox3()">Saber más</button>
                             </div>
                         </div>
                     </div>
@@ -238,6 +242,7 @@
                             <div class="description">
                                 <p class="cargo">Enfermera Coordinadora</p>
                                 <p class="nombre">M. José Sepúlveda Serrano</p>
+                                <button onclick="showFloatingBox4()">Saber más</button>
                             </div>
                         </div>
                     </div>
@@ -247,6 +252,7 @@
                             <div class="description">
                                 <p class="cargo">Enfermera Clínica</p>
                                 <p class="nombre">Carolina Belmar Caamaño</p>
+                                <button onclick="showFloatingBox5()">Saber más</button>
                             </div>
                         </div>
                     </div>
@@ -256,15 +262,167 @@
                             <div class="description">
                                 <p class="cargo">TENS</p>
                                 <p class="nombre">Evelyne Fuenzalida Araneda</p>
+                                <button onclick="showFloatingBox6()">Saber más</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
 
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container_faq">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Por qué son necesarios los estudios clínicos?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Porque son la manera más segura de encontrar tratamientos que
+                        permitan restablecer, curar o mantener la salud de las personas. Los
+                        pacientes de un estudio clínico ayudan a contribuir a la investigación
+                        médica la cual busca mejores y nuevos y tratamientos. Los resultados
+                        de estos estudios clínicos son muy relevantes porque entregan a los
+                        investigadores más información sobre los riesgos y beneficios de los
+                        tratamientos en estudio.                    
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Quién puede participar en un estudio clínico?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los estudios clínicos tienen protocolos y pautas donde se explica quienes pueden participar y quienes no pueden ser incluidos, según las características de la enfermedad y del paciente.
+                        <ul>
+                            <li><strong>Criterio de inclusión:</strong> Son las características necesarias que debe tener un paciente para poder calificar y así ingresar al estudio clínico.</li>
+                            <li><strong>Criterio de exclusión:</strong> Factores específicos que no permiten al paciente ingresar al estudio clínico.</li>
+                        </ul>
+                        Estos dos criterios se basan en condiciones clínicas especificas, con el fin de resguardar en todo momento la salud del paciente.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Qué es un protocolo?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Es el plan que debe seguir el estudio clínico. Este se diseña de forma rigurosa por un grupo de expertos con el fin proteger la salud de los pacientes.  
+                        <br>
+                        <strong>Un protocolo describe:</strong>  La duración del estudio, los criterios sobre quién puede o no participar en este, el calendario de pruebas, procedimientos, medicamentos y la información que los investigadores quieren recopilar sobre el tratamiento en estudio.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Quién financia un estudio clínico?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Estos son financiados por patrocinadores, que pueden ser organizaciones como empresas farmacéuticas, instituciones médicas, fundaciones, grupos de médicos, etc. 
+                        
+                        Normalmente los estudios clínicos los dirige un Médico <i>"investigador principal"</i>  y por un equipo de personas, denominado <i>"equipo de investigación"</i> , que trabaja en cada estudio. 
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Quién asume los costos un estudio clínico?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Normalmente los cubre el patrocinador de la investigación. Esto puede incluir el tratamiento en estudio y otros tratamientos, como análisis de sangre, exploraciones físicas y exploraciones por imagen, entre otros. 
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Cuáles son los beneficios de participar en un estudio clínico?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los beneficios son acceder a nuevos tratamientos en investigación antes de que estén disponibles en el mercado. Acceder en forma rápida a revisiones medicas, análisis de laboratorio y diagnósticos por imágenes, etc.  De esta forma poder contribuir a las terapias ya existentes.
+
+                        Estos estudios son una parte crucial en el desarrollo de la investigación médica a nivel mundial, los cuales nos permiten conectar la realidad de nuestro país con los últimos estudios realizados internacionalmente. 
+
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    ¿Qué es el consentimiento informado?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Es un documento que establece por escrito los detalles del estudio, propósito, duración, procedimiento y con quién comunicarse para diversos fines. Por otro lado, también explica los potenciales riesgos y beneficios del ensayo, así el paciente tendrá toda la información para decidir de forma voluntaria e informada su decisión a participar.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Cuáles son las fases de los estudios clínicos?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Un estudio clínico se lleva a cabo en diferentes etapas que se denominan fases:
+                        <ul>
+                            <li><strong>Fase 1:</strong> Aquí se prueba si un tratamiento es seguro y se busca la mejor manera de administrarlo. Aquí también se busca ver si hay signos de que el cáncer responde al nuevo tratamiento.</li>
+                            <li><strong>Fase 2:</strong> Aquí se prueba si un tipo de cáncer responde al nuevo tratamiento.</li>
+                            <li><strong>Fase 3:</strong> Aquí se compara si el nuevo tratamiento es mejor que el estándar.</li>
+                            <li><strong>Fase 4:</strong> Aquí se encuentra nueva información sobre los beneficios a largo plazo y los posibles efectos secundarios.</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    ¿Cómo se protege a los participantes?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La privacidad y la confidencialidad de los participantes es muy importante. Esto significa que los nombres de los participantes, así como toda información sobre enfermedades y comportamientos estarán en conocimiento solo por personas involucradas en la investigación. 
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    ¿Un participante puede abandonar un estudio clínico después de ingresar?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El paciente puede abandonar un estudio clínico en cualquier momento y por cualquier motivo. Debe informar al equipo de investigación los motivos para hacerlo, ya que esto ayuda a garantizar que los resultados del estudio sean exactos.
+                    </div>
+                </div>
+                </div>
+            </div>            
         </div>
     </section>
 
@@ -329,7 +487,116 @@
 
 </div>
 
+    <div class="shadow-overlay" id="shadow-overlay"></div>
+
+    <!-- Ventanas Flotantes -->
+    <!-- Jorge -->
+    <div class="floating-box" id="floating-box1">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/jmiranda.jpg" alt="">
+            <p class="cargo">director ejecutivo</p>
+            <p class="nombre">jorge miranda yáñez</p>
+            <p class="curriculum">Matrón con Maestría en Administración de Negocios (MBA). Con más de 30 años de
+                experiencia en la industria farmacéutica, con conocimientos en el área de la Oncología y
+                Administración de Empresas.</p>
+            <button onclick="hideFloatingBox1()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+    
+    <!-- Esther -->
+    <div class="floating-box" id="floating-box2">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/drarodriguez.jpg" alt="">
+            <p class="cargo">Director Médico</p>
+            <p class="nombre">Esther Rodriguez de Vásquez</p>
+            <p class="curriculum">Médico Cirujano de la Universidad Central de Venezuela.
+                Posteriormente obtiene el título de Medicina Interna en el Hospital Militar Carlos Arvelo y
+                Oncología Médica en el Instituto Oncológico Luis Razetti de Venezuela.
+                Certificada en la Corporación Nacional Autónoma de Especialidades Médicas
+                (CONACEM).
+
+                Médico Oncólogo del Hospital: Las Higueras, Clínica Sanatorio Alemán y Clínica Bío Bío,
+                de la ciudad de Concepción.</p>
+            <button onclick="hideFloatingBox2()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+    <!-- Alvaro -->
+    <div class="floating-box" id="floating-box3">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/drcompan.jpg" alt="">
+            <p class="cargo">Subdirector Médico</p>
+            <p class="nombre">Alvaro Compán Jiménez</p>
+            <p class="curriculum">Médico Cirujano de la Universidad de Chile. Posteriormente obtiene el título de Cirujano General en el Hospital Clínico de la misma Universidad. 
+                Cursa la sub especialidad de Cabeza y Cuello, Base de Cráneo, Cirugía Reconstructiva y Micro Reconstructiva en el Instituto de Tumores de Milán, Italia. Docente de Pre y Post grado del Departamento de Cirugía de la Facultad de Medicina de la Universidad de Concepción. Actualmente se desempeña como Sub-Jefe del equipo de Cabeza y Cuello del Hospital Clínico Regional, Guillermo Grant Benavente.</p>
+            <button onclick="hideFloatingBox3()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+    <!-- MJose -->
+    <div class="floating-box" id="floating-box4">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/mariajose.jpg" alt="">
+            <p class="cargo">Enfermera Coordinadora</p>
+            <p class="nombre">M. José Sepúlveda Serrano</p>
+            <p class="curriculum">Especialista en Cuidados Intensivos del Adulto Universidad de Concepción
+                Diplomada en Gestión y Dirección en Servicios de Enfermería Pontificia Universidad
+                Católica de Chile.
+                Diplomada en Cuidados Cardiovasculares del Adulto Pontificia Universidad Católica de
+                Chile.
+                15 años de experiencia clinica en Hospitales Públicos de la regíon en areas de Urgencias,
+                Pabellón y Cuidados Intensivos del Adulto.
+                11 años de experiencia como Coordinadora de Estudios Clínicos en áreas como:
+                Oncología, Hematología, Cardiología, Nefrología, Broncopulmonar, Gastroenterología y
+                Neurología.</p>
+            <button onclick="hideFloatingBox4()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+    <!-- Carolina -->
+    <div class="floating-box" id="floating-box5">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/cbelmar.jpg" alt="">
+            <p class="cargo">Enfermera Clínica</p>
+            <p class="nombre">Carolina Belmar Caamaño</p>
+            <p class="curriculum">Encargada de brindar atención clínica a los pacientes y velar por el cumplimiento de
+                protocolos e indicadores en salud.
+                Epidemióloga formada en la Universidad de los Andes, Santiago
+                Diploma en Gestión de Calidad y Seguridad Asistencial Universidad de Chile con
+                experiencia en seguridad clínica, calidad y acreditación.
+                Diplomado en Cuidados de Enfermería del paciente Oncológico Universidad San
+                Sebastián. Con experiencia en la atención de pacientes oncológicos.
+                Diploma en Investigación Clínica y Certificado de Monitor de Ensayos Clínicos,
+                Universidad de Chile.</p>
+            <button onclick="hideFloatingBox5()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+
+    <!-- Evelyne -->
+    <div class="floating-box" id="floating-box6">
+        <div class="floatin-box_container">
+            <img src="./img/equipo/efuenzalida.jpg" alt="">
+            <p class="cargo">TENS</p>
+            <p class="nombre">Evelyne Fuenzalida Araneda</p>
+            <p class="curriculum">Técnico Superior de Enfermería, experiencia en Servicio de Unidad de Paciente Crítico,
+                procedimiento cardiológico y pabellón ambulatorio Dental- Médico.
+                6 años en Servicio de Oncología, Medicina, Cirugía y Unidad de Paciente Critico en la
+                Clínica Sanatorio Alemán.
+                5 años en Centro Médico RED SALUD en unidad pabellón ambulatorio dental y médico,
+                en la unidad de procedimientos médicos y cardiológicos y vacunatorio.</p>
+            <button onclick="hideFloatingBox6()"><span class="material-symbols-outlined">cancel</span></button>
+        </div>
+    </div>
+
+
+
+    <!-- JS ventanas emergentes -->
+    <script src="./js/emergent.js"></script>
+    
     <script src="./js/script.js"></script>
+    
     <script src="./js/bootstrap.min.js"></script>
 
 
