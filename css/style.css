@@ -1322,3 +1322,9 @@ footer {
     text-transform: uppercase;
     font-weight: 400;
 }
+
+/* PAGINA ESTUDIOS */
+
+.container_biocenter a{
+    color: #5A9C9F;
+}
