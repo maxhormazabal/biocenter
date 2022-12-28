@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 
 a:link,
@@ -26,7 +27,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 30;
     background-color: #f7f9f9;
     transition: all 0.5s;
 }
@@ -345,6 +346,7 @@ nav ul li:hover .nav_btn {
 .diagrama_container p {
     font-size: 35px;
     padding-bottom: 10px;
+    padding-left: 30px;
     color: #78d5d7;
     text-transform: uppercase;
     font-weight: 400;
@@ -382,6 +384,7 @@ nav ul li:hover .nav_btn {
     font-size: 20px;
     width: 900px;
     font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .container_ensayos img {
@@ -396,6 +399,23 @@ nav ul li:hover .nav_btn {
 .container_ensayos_img {
     display: flex;
     justify-content: flex-end;
+}
+
+.container_ensayos a {
+    color: #f7f9f9;
+    background-color: #5A9C9F;
+    border: solid 2px #5A9C9F;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 0px 2px 4px rgba(196, 209, 215, 0.3);
+    transition: all 300ms;
+}
+
+.container_ensayos a:hover {
+    color: #5A9C9F;
+    background-color: #f7f9f9;
+    border: solid 2px #5A9C9F;
 }
 
 /* PORQUE BIOCENTER */
@@ -504,6 +524,23 @@ nav ul li:hover .nav_btn {
     color: #f7f9f9;
     height: 2px;
 }
+
+/* new team carrusel */
+
+.new_team {
+    width: 100%;
+}
+
+.container_new_team {
+    max-width: 1600px;
+    margin: auto;
+    /* background: rgb(98, 177, 179);
+    background: linear-gradient(351deg, rgba(98, 177, 179, 1) 54%, rgba(120, 213, 215, 1) 100%);
+    color: #373737; */
+}
+
+
+
 
 /* card */
 
@@ -619,6 +656,18 @@ nav ul li:hover .nav_btn {
 .swiper-button-next{
     color: #5A9C9F;
 }
+
+/* FAQS */
+
+.faq {
+    width: 100%;
+}
+
+.container_faq {
+    max-width: 1600px;
+    margin: auto;
+}
+
 
 /* CONTACTO */
 
@@ -853,6 +902,7 @@ footer {
     .porque_element span {
         font-size: 50px;
     }
+
 }
 
 @media screen and (max-width: 950px) {
@@ -1213,4 +1263,68 @@ footer {
 
 .move_content {
     right: 200px;
+}
+
+/* ventanas emergentes equipo */
+
+  .description button{
+    border: 1px solid #f7f9f9;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f7f9f9;
+    margin-top: 20px;
+  }
+
+  .description button:hover{
+    border: 1px solid #5A9C9F;
+    background-color: #f7f9f9;
+    color: #5A9C9F;
+    transition: all 0.4s ease;
+  }
+
+  .modal-btn{
+    border: none;
+    background-color: transparent;
+    color: #f7f9f9;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .modal-btn span{
+    font-size: 2.5vw;
+    color: #373737;
+  }
+
+  .container_new_team h3 {
+    font-size: 35px;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #78d5d7;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Accordion */
+
+.container-accordion{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+/* preguntas frecuentes */
+
+  .container_faq h3 {
+    font-size: 35px;
+    padding: 30px 0px 30px 30px ;
+    color: #78d5d7;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* PAGINA ESTUDIOS */
+
+.container_biocenter a{
+    color: #5A9C9F;
 }
