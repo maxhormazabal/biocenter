@@ -362,6 +362,7 @@ nav ul li:hover .nav_btn {
 .container_ensayos {
     max-width: 1600px;
     margin: auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
 }
