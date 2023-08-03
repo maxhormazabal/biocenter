@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
     <title>BIOCENTER</title>
 </head>
 
 <body>
-
     <header id="header">
         <div class="container_header">
             <div class="logo">
@@ -75,15 +78,60 @@
                 <div class="biocenter_text">
                     <h2 class="mb-5">CONOCE NUESTROS <span>ESTUDIOS CLINICOS</span></h2>
 
+                    <!-- CARRUSEL VIDEOS
+
+                    <div class="pb-5 rounded w-75 m-auto">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="false">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="wrapper">
+                                    <iframe src="https://www.youtube.com/embed/blGFNF3cobY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Estudios clínicos - MK7684A006</h5>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="wrapper">
+                                    <iframe src="https://www.youtube.com/embed/iFrYwv2fYA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Estudios clínicos - MK7684A007</h5>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div> -->
+
+
+
                     <!-- ENSAYO 1 -->
                     <div class="card mb-5" style="max-width: 1200px;">
                         <div class="row g-0">
-                          <div class="col-md-4">
+                          <!-- <div class="col-md-4">
                             <img src="./img/cover/cover3.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                            <a href="URL_DEL_VIDEO_YOUTUBE" target="_blank" class="btn-play"></a>
+                          </div>                        -->
+                          
+                          <div class="col-md-4 position-relative">
+                            <img src="./img/cover/cover3.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                            <button class="btn-play">
+                                <a href="https://youtu.be/iFrYwv2fYA8" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                            </button>
                           </div>
+                          
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Estudio MK7684A-007</h5>
+                              <h6 class="card-title text-danger">CERRADO</h6>
                               <p class="card-text w-100">Estudio aleatorizado, doble ciego, de fase 3 de MK-7684A más quimioterapia frente a pembrolizumab más quimioterapia como primera línea de tratamiento en participantes con cáncer de pulmón de células no pequeñas metastásico.</p>
                               <p>
                                 <ul>
@@ -108,12 +156,16 @@
                     <!-- ENSAYO 2 -->
                     <div class="card mb-5" style="max-width: 1200px;">
                         <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="./img/cover/cover5.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
-                          </div>
+                            <div class="col-md-4 position-relative">
+                                <img src="./img/cover/cover5.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                                <button class="btn-play">
+                                    <a href="https://youtu.be/blGFNF3cobY" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                                </button>
+                              </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Estudio MK7684A-006</h5>
+                              <h6 class="card-title text-success">ABIERTO</h6>
                               <p class="card-text w-100">Estudio de fase 3, de etiqueta abierta de MK-7684A (coformulación de vibostolimab con pembrolizumab) en combinación con quimiorradioterapia concurrente seguida de MK-7684A frente a quimiorradioterapia concurrente seguida de durvalumab en participantes con NSCLC en estadio III, irresecable, localmente avanzado.</p>
                               <p>
                                 <ul>
@@ -138,12 +190,16 @@
                     <!-- ENSAYO 3 -->
                     <div class="card mb-5" style="max-width: 1200px;">
                         <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="./img/cover/cover4.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
-                          </div>
+                            <div class="col-md-4 position-relative">
+                                <img src="./img/cover/cover4.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                                <button class="btn-play">
+                                    <a href="#" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                                </button>
+                              </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Estudio BFAST</h5>
+                              <h6 class="card-title text-success">ABIERTO</h6>
                               <p class="card-text w-100">Estudio fase II/III multicéntrico para evaluar la eficacia y seguridad de múltiples terapias dirigidas, como tratamiento para pacientes con cáncer de pulmón de células no pequeñas (CPCNP) avanzado o metastásico portadores de mutaciones somáticas tratables detectadas en sangre (BFAST: blood-first assay screening trial [<i>estudio de selección con valoración inicial en sangre</i>]).</p>
                               <p>
                                 <ul>
@@ -168,12 +224,16 @@
                     <!-- ENSAYO 4 -->
                     <div class="card mb-5" style="max-width: 1200px;">
                         <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="./img/cover/cover2.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
-                          </div>
+                            <div class="col-md-4 position-relative">
+                                <img src="./img/cover/cover2.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                                <button class="btn-play">
+                                    <a href="#" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                                </button>
+                              </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Estudio SERENA-4</h5>
+                              <h6 class="card-title text-success">ABIERTO</h6>
                               <p class="card-text w-100">Estudio aleatorizado, multicéntrico, doble ciego, fase III de AZD9833 (un SERD oral) más palbociclib comparado con anastrozol más palbociclib para el tratamiento de pacientes con cáncer de mama avanzado receptor estrógenos positivo, HER2-negativo que no han recibido ningún tratamiento sistémico para enfermedad avanzada (SERENA-4).</p>
                               <p>
                                 <ul>
@@ -194,6 +254,75 @@
                           </div>
                         </div>
                     </div>
+
+                    <!-- ENSAYO 5 -->
+                    <div class="card mb-5" style="max-width: 1200px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 position-relative">
+                                <img src="./img/cover/cover6.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                                <button class="btn-play">
+                                    <a href="#" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                                </button>
+                              </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Estudio PTG-300</h5>
+                              <h6 class="card-title text-success">ABIERTO</h6>
+                              <p class="card-text w-100">Un estudio de Fase 3 del mimético de hepcidina, Rusfertida (PTG-300), en pacientes con policitemia vera.</p>
+                              <p>
+                                <ul>
+                                    <li><strong>Patología:</strong> Policitemia Vera</li>
+                                    <li><strong>Fase:</strong> 3</li>
+                                    <li><strong>Rama de tratamiento:</strong>
+                                        <ul>
+                                            <li>RUSFERTIDA/PLACEBO</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Nombre del investigador principal:</strong> Dr. Mauricio Chandía Cabas</li>
+                                </ul>
+                                <a target="_blank" href="https://www.clinicaltrials.gov/study/NCT05210790?cond=Polycythemia%20Vera&term=PTG-300-11&rank=1">Click aquí para más información</a> 
+                              </p>
+                              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- ENSAYO 6 -->
+                    <div class="card mb-5" style="max-width: 1200px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 position-relative">
+                                <img src="./img/cover/cover1.jpg" class="card-img-top img-fluid rounded-start" style="object-fit: cover; height: 100%;" alt="...">
+                                <button class="btn-play">
+                                    <a href="#" data-fancybox><span class="material-symbols-outlined">play_circle</span></a>
+                                </button>
+                              </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Estudio MK-1026-008, BELLWAVE-008</h5>
+                              <h6 class="card-title text-success">ABIERTO</h6>
+                              <p class="card-text w-100">Estudio aleatorizado de fase 3 para comparar la eficacia y seguridad de nemtabrutinib frente a quimioinmunoterapia para leucemia linfocítica crónica/linfoma linfocítico pequeño no tratados previamente, sin alteraciones de TP53 (BELLWAVE-008).</p>
+                              <p>
+                                <ul>
+                                    <li><strong>Patología:</strong> Leucemia Linfocítica Crónica</li>
+                                    <li><strong>Fase:</strong> 3</li>
+                                    <li><strong>Rama de tratamiento:</strong>
+                                        <ul>
+                                            <li>NEMTABRUTINIB</li>
+                                            <li>BENDAMUSTINA + RITUXIMAB</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Nombre del investigador principal:</strong> Dr. Mauricio Chandía Cabas</li>
+                                </ul>
+                                <a target="_blank" href="https://www.clinicaltrials.gov/study/NCT05624554?cond=Leukemia%20Lymphocytic%20Chronic%20B-Cell&intr=Nemtabrutinib&rank=1">Click aquí para más información</a> 
+                              </p>
+                              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
             </div>
         </section>
 
@@ -257,12 +386,22 @@
     </footer>
 
 </div>
+
+
+    <!-- Incluir jQuery desde el CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Incluir Fancybox desde el CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
     <!-- JS ventanas emergentes -->
     <script src="./js/emergent.js"></script>
     
     <script src="./js/script.js"></script>
     
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/estudios_lightbox.js"></script>
 </body>
 
 </html>
