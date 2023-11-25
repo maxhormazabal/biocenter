@@ -1411,3 +1411,26 @@ footer {
   }
   
   
+  /* Navegación estudios */
+
+  /* Estilos personalizados para los botones en la navegación de estudios */
+.navegacion_estudios .pagination-lg .page-item.active .page-link {
+    background-color: #5A9C9F;
+    border: 2px solid #5A9C9F;
+    color: #f7f9f9;
+    border-radius: 20px;
+}
+
+.navegacion_estudios .pagination-lg .page-item:not(.active) .page-link {
+    border: 2px solid #5A9C9F;
+    color: #5A9C9F;
+    background-color: #f7f9f9;
+    border-radius: 20px;
+}
+
+.navegacion_estudios .pagination-lg .page-item:not(.active) .page-link:hover {
+    background-color: #5A9C9F;
+    border: 2px solid #5A9C9F;
+    color: #f7f9f9;
+    border-radius: 20px;
+}
