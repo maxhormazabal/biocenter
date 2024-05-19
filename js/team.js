@@ -97,22 +97,30 @@ const equipo = [
     let equipoCompleto = [...equipo];
     let html = '';
     
-    let winWidth = window.innerWidth;
+    let mobileLimit = 790;
     let cardWidthAdjust = ""
 
-    if (winWidth < 790) {
+    if (window.innerWidth < mobileLimit) {
         cardWidthAdjust = 'style="max-width: 60%; margin:20px; flex: 1;"'
     } else {
         cardWidthAdjust = 'style="max-width: 90%; flex: 1;"'
     }
 
     // Si la cantidad de integrantes no es múltiplo del número de integrantes por grupo, repetimos los últimos integrantes
-    let increment_team = integrantesPorGrupo - 1;
-    while (equipoCompleto.length % integrantesPorGrupo !== 0) {
-      equipoCompleto.splice(equipo.length - 1, 0, equipo[equipo.length - increment_team]);
-      increment_team += 1;
+
+    let increment_team = 0;
+    if (integrantesPorGrupo == 3) {
+        increment_team = 2
+    } else if (integrantesPorGrupo == 2) {
+        increment_team = 2
     }
-  
+
+    while (equipoCompleto.length % integrantesPorGrupo !== 0) {
+        equipoCompleto.splice(equipo.length - 1, 0, equipo[equipo.length - increment_team]); 
+        increment_team += 1;
+
+    }
+
     for (let i = 0; i < equipoCompleto.length; i += integrantesPorGrupo) {
       html += `<div class="carousel-item ${i === 0 ? 'active' : ''}">
         <div class="row justify-content-center align-items-stretch">`;
