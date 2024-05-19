@@ -91,28 +91,38 @@ const equipo = [
       descripcion: 'Médico y Cirujano formado en Universidad Libre de Colombia seccional Barranquilla. <br> Médico Internista de la Universidad de Concepción de Chile y Sub-especialista en Oncología Médica, formado en el Instituto Nacional del Cáncer y Clínica Alemana de Santiago en convenio con la Universidad del Desarrollo de Chile.'
     }
   ];
+
   
-  function createTeamHTML(equipo) {
+  function createTeamHTML(equipo, integrantesPorGrupo) {
     let equipoCompleto = [...equipo];
-  
-    // Si la cantidad de integrantes no es múltiplo de 3, repetimos los últimos integrantes
-    let increment_team = 2;
-    while (equipoCompleto.length % 3 !== 0) {
-        equipoCompleto.splice(equipo.length -1, 0, equipo[equipo.length - increment_team]);
-        increment_team += 1
-        // equipoCompleto.push(equipo[equipo.length - increment_team]);
+    let html = '';
+    
+    let winWidth = window.innerWidth;
+    let cardWidthAdjust = ""
+
+    if (winWidth < 790) {
+        cardWidthAdjust = 'style="max-width: 60%; margin:20px; flex: 1;"'
+    } else {
+        cardWidthAdjust = 'style="max-width: 90%; flex: 1;"'
+    }
+
+    // Si la cantidad de integrantes no es múltiplo del número de integrantes por grupo, repetimos los últimos integrantes
+    let increment_team = integrantesPorGrupo - 1;
+    while (equipoCompleto.length % integrantesPorGrupo !== 0) {
+      equipoCompleto.splice(equipo.length - 1, 0, equipo[equipo.length - increment_team]);
+      increment_team += 1;
     }
   
-    let html = '';
-  
-    for (let i = 0; i < equipoCompleto.length; i += 3) {
+    for (let i = 0; i < equipoCompleto.length; i += integrantesPorGrupo) {
       html += `<div class="carousel-item ${i === 0 ? 'active' : ''}">
         <div class="row justify-content-center align-items-stretch">`;
   
-      for (let j = 0; j < 3; j++) {
+      for (let j = 0; j < integrantesPorGrupo; j++) {
         const miembro = equipoCompleto[i + j];
-        html += `<div class="col-12 col-sm-6 col-md-4 d-flex ${j === 1 ? 'd-none d-sm-flex' : ''} ${j === 2 ? 'd-none d-md-flex' : ''}">
-            <div class="team_card mx-auto" style="max-width: 90%; flex: 1;">
+        const colSizeClass = calculateColumnSizeClass(integrantesPorGrupo, j);
+        
+        html += `<div class="${colSizeClass}">
+            <div class="team_card mx-auto" ${cardWidthAdjust}>
               <img class="img-fluid" src="${miembro.imagen}" alt="${miembro.nombre}">
               <div class="description">
                 <p class="cargo">${miembro.cargo}</p>
@@ -141,11 +151,6 @@ const equipo = [
                   ${miembro.descripcion}
                   </p>
                 </div>
-                <!-- <div class="modal-footer d-flex justify-content-center">
-                  <button type="button" class="modal-btn" data-bs-dismiss="modal">
-                      <span class="material-symbols-outlined">cancel</span>
-                  </button>
-              </div> -->
               </div>
             </div>
           </div>
@@ -167,9 +172,39 @@ const equipo = [
     }
   }
   
+  // Esta función calcula la clase de tamaño de columna Bootstrap según el número de integrantes por grupo y la posición actual.
+  function calculateColumnSizeClass(integrantesPorGrupo, currentPosition) {
+    switch (integrantesPorGrupo) {
+      case 2:
+        return currentPosition === 0 ? "col-12 col-md-6" : "col-12 col-md-6";
+      case 3:
+        return currentPosition === 0 ? "col-12 col-md-4" : currentPosition === 1 ? "col-12 col-md-4" : "col-12 col-md-4";
+      default:
+        return "col-12";
+    }
+  }
+  
   // Ejecuta la función para generar el HTML del equipo
   document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed");
-    createTeamHTML(equipo);
+    // Determinar el número de integrantes por grupo según el tamaño de la pantalla
+    let integrantesPorGrupo;
+    if (window.innerWidth < 992) {
+      integrantesPorGrupo = 2;
+    } else {
+      integrantesPorGrupo = 3;
+    }
+    createTeamHTML(equipo, integrantesPorGrupo);
+  });
+  
+  // Escucha el evento de cambio de tamaño de la ventana para ajustar dinámicamente el número de integrantes por grupo.
+  window.addEventListener('resize', () => {
+    let integrantesPorGrupo;
+    if (window.innerWidth < 992) {
+      integrantesPorGrupo = 2;
+    } else {
+      integrantesPorGrupo = 3;
+    }
+    createTeamHTML(equipo, integrantesPorGrupo);
   });
   
