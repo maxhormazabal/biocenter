@@ -590,7 +590,7 @@ nav ul li:hover .nav_btn {
     padding: 0;
     margin: 0;
     height: 4rem;
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .description .btn{
@@ -1196,17 +1196,19 @@ footer {
 
 } */
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 300px) {
     /* .team_card img{
         width: 250px;
     } */
+    
     .description .cargo{
-        font-size: 4vw;
+        font-size: 0.6rem;
+        height: 4rem;
     }
     
     .description .nombre{
-        font-size: 3vw;
-        padding-bottom: 20px;
+        font-size: 0.7rem;
+        height: 2rem;
     }
 
 }
