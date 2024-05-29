@@ -558,7 +558,7 @@ nav ul li:hover .nav_btn {
 }
 
 .team_card img{
-    width: 300px;
+    width: 100%;
     border-radius: 25px;
 }
 
@@ -576,18 +576,25 @@ nav ul li:hover .nav_btn {
 }
 
 .description .cargo{
-    font-size: 1vw;
+    font-size: 0.85rem;
     font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0;
+    height: 4rem;
 }
 
 .description .nombre{
-    font-size: 1.7vw;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 0;
     margin: 0;
+    height: 4rem;
+    /* margin-bottom: 1rem; */
+}
+
+.description .btn{
+    margin-top: 100rem;
 }
 
 /* SWIPER */
@@ -922,19 +929,19 @@ footer {
 
         /* TEAM */
 
-        .team_card img{
+        /* .team_card img{
             width: 100%;
             border-radius: 25px;
-        }
+        } */
     
-        .description .cargo{
+        /* .description .cargo{
             font-size: 2vw;
         }
         
         .description .nombre{
             font-size: 1.5vw;
             padding-bottom: 5px;
-        }
+        } */
 
         .porque_element h4 {
             font-size: 18px;
@@ -1116,19 +1123,19 @@ footer {
 
     /* TEAM */
 
-    .team_card img{
+    /* .team_card img{
         width: 180px;
         border-radius: 25px;
-    }
+    } */
 
-    .description .cargo{
+    /* .description .cargo{
         font-size: 2vw;
     }
     
     .description .nombre{
         font-size: 2vw;
         padding-bottom: 5px;
-    }
+    } */
 
     /* FOOTER */
 
@@ -1182,17 +1189,17 @@ footer {
     
 }
 
-@media screen and (max-width: 690px) {
+/* @media screen and (max-width: 690px) {
     .team_card img{
         width: 140px;
     }
 
-}
+} */
 
 @media screen and (max-width: 525px) {
-    .team_card img{
+    /* .team_card img{
         width: 250px;
-    }
+    } */
     .description .cargo{
         font-size: 4vw;
     }
@@ -1245,9 +1252,9 @@ footer {
         transform: scale(0.65);
     }
 
-    .team_card img{
+    /* .team_card img{
         width: 150px;
-    }
+    } */
 }
 
 
