@@ -80,14 +80,6 @@ const equipo = [
       "Médico Cirujano de la Universidad San Sebastián, postítulos de Infecciones Asociadas a Atención en Salud y de ACLS en la misma casa de estudios, luego se perfecciona en el Desarrollo de Habilidades y Competencias de Coaching en la Adademy Global Coaching. <br> Actualmente es Médico residente del servicio de Hematología y Oncología del Hospital Guillermo Grant Benavente, Médico General del Centro Kinesiosport,  Encargada de gestión de la ONG Contracooltura y ejerce docencia en el Hospital simulado de la UNAB",
   },
   {
-    nombre: "ARANZA MUÑOZ RAMIREZ",
-    cargo: "Enfermera clínica",
-    imagen: "./img/equipo/aranza.jpg",
-    modalId: "staticBackdrop12",
-    descripcion:
-      "Enfermera titulada de la Universidad del Desarrollo en Concepción, desarrolla postítulos de Administración y Dirección Estratégica para Instituciones de la Salud y Gestión del Cuidado en Paciente Pediátrico. Amplia experiencia clínica en Hospitales Públicos de la región en áreas Quirúrgicas y Pediátricas.",
-  },
-  {
     nombre: "DIEGO RICÚ PAZ",
     cargo: " Coordinador estudios clínicos",
     imagen: "./img/equipo/diego.jpg",
