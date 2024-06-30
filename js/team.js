@@ -77,7 +77,7 @@ const equipo = [
     imagen: "./img/equipo/fernanda.jpg",
     modalId: "staticBackdrop11",
     descripcion:
-      "Médico Cirujano de la Universidad San Sebastián, postítulos de Infecciones Asociadas a Atención en Salud y de ACLS en la misma casa de estudios, luego se perfecciona en el Desarrollo de Habilidades y Competencias de Coaching en la Adademy Global Coaching. <br> Actualmente es Médico residente del servicio de Hematología y Oncología del Hospital Guillermo Grant Benavente, Médico General del Centro Kinesiosport,  Encargada de gestión de la ONG Contracooltura y ejerce docencia en el Hospital simulado de la UNAB",
+      "Médico Cirujano de la Universidad San Sebastián, postítulos de Infecciones Asociadas a Atención en Salud y de ACLS en la misma casa de estudios, luego se perfecciona en el Desarrollo de Habilidades y Competencias de Coaching en la Academy Global Coaching. <br> Actualmente es Médico residente del servicio de Hematología y Oncología del Hospital Guillermo Grant Benavente, Médico General del Centro Kinesiosport,  Encargada de gestión de la ONG Contracooltura y ejerce docencia en el Hospital simulado de la UNAB",
   },
   {
     nombre: "DIEGO RICÚ PAZ",
@@ -93,7 +93,7 @@ const equipo = [
     imagen: "./img/equipo/jbarbosa.jpg",
     modalId: "staticBackdrop14",
     descripcion:
-      "Médico y Cirujano formado en Universidad Libre de Colombia seccional Barranquilla. <br> Médico Internista de la Universidad de Concepción de Chile y Sub-especialista en Oncología Médica, formado en el Instituto Nacional del Cáncer y Clínica Alemana de Santiago en convenio con la Universidad del Desarrollo de Chile.",
+      "Médico Cirujano formado en Universidad Libre de Colombia seccional Barranquilla. <br> Médico Internista de la Universidad de Concepción de Chile y Sub-especialista en Oncología Médica, formado en el Instituto Nacional del Cáncer y Clínica Alemana de Santiago en convenio con la Universidad del Desarrollo de Chile.",
   },
 ];
 
