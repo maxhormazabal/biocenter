@@ -116,6 +116,41 @@ nav ul li:hover .nav_btn {
   color: #f7f9f9;
 }
 
+/* LOADER */
+
+.spinner-wrapper {
+  background-color: #f7f9f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.spinner-border {
+  width: 4rem;
+  height: 4rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Oculta el contenido de la página hasta que se cargue */
+body.loading {
+  overflow: hidden;
+}
+
 /* CONTAINER ALL */
 
 .container_all {
