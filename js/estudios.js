@@ -346,18 +346,155 @@ function inicializarFiltros() {
 
 // Inicializar botones de vista
 function inicializarBotonesVista() {
-  document.querySelectorAll(".view-btn").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      vistaActual = this.dataset.view;
+  // Crear el nuevo toggle switch
+  const viewSelectorContainer = document.getElementById(
+    "viewSelectorContainer"
+  );
+  viewSelectorContainer.innerHTML = `
+    <div class="toggle-view-container">
+      <div class="toggle-view-text mb-2">
+        <span id="viewText">Vista: <strong>Profesionales</strong></span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="viewToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  `;
 
-      // Actualizar clases de botones
-      document.querySelectorAll(".view-btn").forEach((b) => {
-        b.classList.remove("active");
-      });
-      this.classList.add("active");
+  // Añadir estilos CSS para el toggle
+  const style = document.createElement("style");
+  style.textContent = `
+    .toggle-view-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .toggle-view-text {
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .toggle-labels {
+      display: flex;
+      width: 120px;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .toggle-label-left {
+      margin-right: 10px;
+      font-weight: bold;
+      color: #28a745;
+    }
+    
+    .toggle-label-right {
+      margin-left: 10px;
+      color: #666;
+    }
+    
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
 
-      generarTarjetas();
-    });
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #28a745;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #28a745;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    
+    input:checked ~ .toggle-labels .toggle-label-left {
+      font-weight: normal;
+      color: #666;
+    }
+    
+    input:checked ~ .toggle-labels .toggle-label-right {
+      font-weight: bold;
+      color: #28a745;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Manejar el cambio del toggle
+  const viewToggle = document.getElementById("viewToggle");
+  const viewText = document.getElementById("viewText");
+
+  viewToggle.addEventListener("change", function () {
+    vistaActual = this.checked ? "paciente" : "profesional";
+
+    // Actualizar el texto que muestra la vista actual
+    viewText.innerHTML = `Vista: <strong>${
+      this.checked ? "Pacientes" : "Profesionales"
+    }</strong>`;
+
+    // Actualizar las clases de las etiquetas
+    document.querySelector(".toggle-label-left").style.fontWeight = this.checked
+      ? "normal"
+      : "bold";
+    document.querySelector(".toggle-label-left").style.color = this.checked
+      ? "#666"
+      : "#28a745";
+    document.querySelector(".toggle-label-right").style.fontWeight = this
+      .checked
+      ? "bold"
+      : "normal";
+    document.querySelector(".toggle-label-right").style.color = this.checked
+      ? "#28a745"
+      : "#666";
+
+    generarTarjetas();
   });
 }
 
