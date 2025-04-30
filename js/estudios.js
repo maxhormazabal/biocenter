@@ -248,11 +248,15 @@ function generarTarjetas() {
       <div class="card h-100 shadow-sm">
         <div class="row g-0">
           <div class="col-md-4 position-relative">
-            <img src="${tarjeta.img}" class="img-fluid rounded-start h-100" 
-                 style="object-fit: cover;" alt="${tarjeta.titulo}">
-            <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="${tarjeta.img}" class="img-fluid rounded-start w-100" 
+                   style="object-fit: cover; height: 100%;" alt="${
+                     tarjeta.titulo
+                   }">
+            </div>
+            <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
               <a href="${tarjeta.videoLink}" data-fancybox>
-                <span class="material-symbols-outlined" style="font-size: 3rem;">play_circle</span>
+                <span class="material-symbols-outlined" style="font-size: 3rem; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5);">play_circle</span>
               </a>
             </button>
           </div>
@@ -264,7 +268,7 @@ function generarTarjetas() {
                   ? "text-success"
                   : "text-danger"
               }">${tarjeta.estado}</h6>
-              <div class="card-text flex-grow-1">
+              <div class="card-text flex-grow-1 overflow-auto" style="max-height: 200px;">
                 ${
                   vistaActual === "profesional"
                     ? tarjeta.descripcionProfesional
