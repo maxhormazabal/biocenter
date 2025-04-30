@@ -17,7 +17,7 @@ const equipo = [
   },
   {
     nombre: "Alvaro Compán Jiménez",
-    cargo: "Subdirector Médico",
+    cargo: "Cirujano Cabeza y Cuello",
     imagen: "./img/equipo/drcompan.jpg",
     modalId: "staticBackdrop3",
     descripcion:
@@ -89,7 +89,7 @@ const equipo = [
   },
   {
     nombre: "JOSE MAURICIO BARBOSA HERNÁNDEZ",
-    cargo: "Médico Cirujano",
+    cargo: "Oncólogo Médico",
     imagen: "./img/equipo/jbarbosa.jpg",
     modalId: "staticBackdrop14",
     descripcion:
