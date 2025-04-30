@@ -246,19 +246,19 @@ function generarTarjetas() {
 
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
-        <div class="row g-0">
-          <div class="col-md-4 position-relative">
-            <div style="height: 200px; overflow: hidden;">
-              <img src="${tarjeta.img}" class="img-fluid rounded-start w-100" 
-                   style="object-fit: cover; height: 100%;" alt="${
+        <div class="row g-0 h-100">
+          <div class="col-md-4 position-relative h-100">
+            <div style="position: relative; height: 100%;">
+              <img src="${tarjeta.img}" 
+                   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="${
                      tarjeta.titulo
                    }">
+              <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+                <a href="${tarjeta.videoLink}" data-fancybox>
+                  <span class="material-symbols-outlined" style="font-size: 3rem; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5);">play_circle</span>
+                </a>
+              </button>
             </div>
-            <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
-              <a href="${tarjeta.videoLink}" data-fancybox>
-                <span class="material-symbols-outlined" style="font-size: 3rem; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5);">play_circle</span>
-              </a>
-            </button>
           </div>
           <div class="col-md-8">
             <div class="card-body d-flex flex-column h-100">
@@ -268,7 +268,7 @@ function generarTarjetas() {
                   ? "text-success"
                   : "text-danger"
               }">${tarjeta.estado}</h6>
-              <div class="card-text flex-grow-1 overflow-auto" style="max-height: 200px;">
+              <div class="card-text flex-grow-1 overflow-auto" style="max-height: 300px;">
                 ${
                   vistaActual === "profesional"
                     ? tarjeta.descripcionProfesional
