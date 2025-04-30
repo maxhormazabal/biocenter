@@ -247,14 +247,12 @@ function generarTarjetas() {
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
         <div class="row g-0 h-100">
-          <!-- En móviles la imagen ocupa todo el ancho, en tablets/desktop solo 1/3 -->
-          <div class="col-12 col-md-4 position-relative">
-            <!-- Altura fija en móviles, altura completa en desktop -->
-            <div style="position: relative; height: 200px;">
-              <img src="${tarjeta.img}" 
-                   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="${
-                     tarjeta.titulo
-                   }">
+          <!-- Contenedor de imagen con clases responsivas -->
+          <div class="col-12 col-md-4 position-relative card-img-container">
+            <div class="card-img-wrapper">
+              <img src="${tarjeta.img}" class="card-study-img" alt="${
+      tarjeta.titulo
+    }">
               <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
                 <a href="${tarjeta.videoLink}" data-fancybox>
                   <span class="material-symbols-outlined" style="font-size: 3rem; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5);">play_circle</span>
@@ -262,9 +260,9 @@ function generarTarjetas() {
               </button>
             </div>
           </div>
-          <!-- En móviles ocupa todo el ancho, en tablets/desktop 2/3 -->
+          <!-- Contenedor de texto -->
           <div class="col-12 col-md-8">
-            <div class="card-body d-flex flex-column">
+            <div class="card-body h-100 d-flex flex-column">
               <h5 class="card-title">${tarjeta.titulo}</h5>
               <h6 class="card-subtitle mb-2 ${
                 tarjeta.estado === "RECLUTAMIENTO ACTIVO"
@@ -377,25 +375,6 @@ function inicializarBotonesVista() {
       color: #333;
     }
     
-    .toggle-labels {
-      display: flex;
-      width: 120px;
-      justify-content: space-between;
-      font-size: 14px;
-      color: #666;
-    }
-    
-    .toggle-label-left {
-      margin-right: 10px;
-      font-weight: bold;
-      color: #28a745;
-    }
-    
-    .toggle-label-right {
-      margin-left: 10px;
-      color: #666;
-    }
-    
     /* The switch - the box around the slider */
     .switch {
       position: relative;
@@ -454,16 +433,6 @@ function inicializarBotonesVista() {
     .slider.round:before {
       border-radius: 50%;
     }
-    
-    input:checked ~ .toggle-labels .toggle-label-left {
-      font-weight: normal;
-      color: #666;
-    }
-    
-    input:checked ~ .toggle-labels .toggle-label-right {
-      font-weight: bold;
-      color: #28a745;
-    }
   `;
   document.head.appendChild(style);
 
@@ -478,21 +447,6 @@ function inicializarBotonesVista() {
     viewText.innerHTML = `Vista: <strong>${
       this.checked ? "Pacientes" : "Profesionales"
     }</strong>`;
-
-    // Actualizar las clases de las etiquetas
-    document.querySelector(".toggle-label-left").style.fontWeight = this.checked
-      ? "normal"
-      : "bold";
-    document.querySelector(".toggle-label-left").style.color = this.checked
-      ? "#666"
-      : "#28a745";
-    document.querySelector(".toggle-label-right").style.fontWeight = this
-      .checked
-      ? "bold"
-      : "normal";
-    document.querySelector(".toggle-label-right").style.color = this.checked
-      ? "#28a745"
-      : "#666";
 
     generarTarjetas();
   });
@@ -512,3 +466,42 @@ function inicializar() {
 
 // Iniciar cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", inicializar);
+
+// Añadir estilos CSS para las tarjetas responsivas
+const cardStyles = document.createElement("style");
+cardStyles.textContent = `
+  /* Estilos para el contenedor de la imagen */
+  .card-img-container {
+    height: auto;
+  }
+  
+  /* Estilos para el wrapper de la imagen */
+  .card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  /* Estilos para la imagen */
+  .card-study-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media query para pantallas medianas y grandes */
+  @media (min-width: 768px) {
+    .card-img-container {
+      height: 100%;
+    }
+    
+    .card-img-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+`;
+document.head.appendChild(cardStyles);
