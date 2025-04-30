@@ -221,60 +221,85 @@ function generarTarjetas() {
   const container = document.getElementById("card-container");
   container.innerHTML = ""; // Limpiar tarjetas anteriores
 
-  tarjetas.forEach((tarjeta) => {
-    // Filtrar por etiqueta
-    if (filtroActual !== "all" && !tarjeta.etiquetas.includes(filtroActual))
-      return;
+  // Filtrar tarjetas según el filtro actual
+  const tarjetasFiltradas = tarjetas.filter(
+    (tarjeta) =>
+      filtroActual === "todos" || tarjeta.etiquetas.includes(filtroActual)
+  );
 
-    // Crear tarjeta
-    const card = document.createElement("div");
-    // card.classList.add("col-md-6");
-    card.innerHTML = `
-
-        <div class="card mb-5" style="max-width: 1200px;">
-            <div class="row g-0">
-
-                <div class="col-md-4 position-relative">
-                    <img src="${
-                      tarjeta.img
-                    }" class="card-img-top img-fluid rounded-start"
-                        style="object-fit: cover; height: 100%;" alt="...">
-                    <button class="btn-play">
-                        <a href="${tarjeta.videoLink}" data-fancybox><span
-                                class="material-symbols-outlined">play_circle</span></a>
-                    </button>
-                </div>
-
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">${tarjeta.titulo}</h5>
-                        <h6 class="card-title ${
-                          tarjeta.estado === "RECLUTAMIENTO ACTIVO"
-                            ? "text-success"
-                            : "text-danger"
-                        }">${tarjeta.estado}</h6>
-                                ${
-                                  vistaActual === "profesional"
-                                    ? tarjeta.descripcionProfesional
-                                    : tarjeta.descripcionPaciente
-                                }
-                        <a target="_blank" href="${tarjeta.infoLink}">Click aquí
-                            para más información</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+  // Si no hay tarjetas que mostrar
+  if (tarjetasFiltradas.length === 0) {
+    container.innerHTML = `
+      <div class="col-12 text-center">
+        <div class="alert alert-info">
+          No se encontraron estudios clínicos con el filtro seleccionado.
         </div>
-        `;
+      </div>
+    `;
+    return;
+  }
+
+  // Generar tarjetas filtradas
+  tarjetasFiltradas.forEach((tarjeta) => {
+    const card = document.createElement("div");
+    card.classList.add("col-md-6", "mb-4"); // Usar sistema de columnas de Bootstrap
+
+    card.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4 position-relative">
+            <img src="${tarjeta.img}" class="img-fluid rounded-start h-100" 
+                 style="object-fit: cover;" alt="${tarjeta.titulo}">
+            <button class="btn-play position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <a href="${tarjeta.videoLink}" data-fancybox>
+                <span class="material-symbols-outlined" style="font-size: 3rem;">play_circle</span>
+              </a>
+            </button>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body d-flex flex-column h-100">
+              <h5 class="card-title">${tarjeta.titulo}</h5>
+              <h6 class="card-subtitle mb-2 ${
+                tarjeta.estado === "RECLUTAMIENTO ACTIVO"
+                  ? "text-success"
+                  : "text-danger"
+              }">${tarjeta.estado}</h6>
+              <div class="card-text flex-grow-1">
+                ${
+                  vistaActual === "profesional"
+                    ? tarjeta.descripcionProfesional
+                    : tarjeta.descripcionPaciente
+                }
+              </div>
+              <a href="${
+                tarjeta.infoLink
+              }" target="_blank" class="btn btn-outline-primary mt-2">
+                Más información
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
     container.appendChild(card);
+  });
+
+  // Inicializar Fancybox para los nuevos elementos
+  $("[data-fancybox]").fancybox({
+    youtube: {
+      controls: 1,
+      showinfo: 0,
+    },
   });
 }
 
-// Botones de filtro
-filtros = [
+// Definir filtros disponibles
+const filtros = [
   "todos",
   "cardiologia",
   "digestivo",
+  "hematologicos",
   "leucemia_linfoma",
   "mama",
   "piel",
@@ -284,6 +309,7 @@ filtros = [
   "trombocitemia_esencial",
 ];
 
+// Función para formatear strings (convertir snake_case a Title Case)
 function formatString(str) {
   return str
     .replace(/_/g, " ")
@@ -292,46 +318,53 @@ function formatString(str) {
     .join(" ");
 }
 
-const filterSelect = document.getElementById("filterSelect");
+// Inicializar el selector de filtros
+function inicializarFiltros() {
+  const filterSelect = document.getElementById("filterSelect");
+  filterSelect.innerHTML = ""; // Limpiar opciones existentes
 
-filtros.forEach((filtro) => {
-  const option = document.createElement("option");
-  option.value = filtro;
-  option.textContent = formatString(filtro);
+  filtros.forEach((filtro) => {
+    const option = document.createElement("option");
+    option.value = filtro;
+    option.textContent = formatString(filtro);
+    filterSelect.appendChild(option);
+  });
 
-  filterSelect.appendChild(option);
-});
+  // Manejar cambio de filtro
+  filterSelect.addEventListener("change", function () {
+    filtroActual = this.value;
+    generarTarjetas();
+  });
+}
 
-// Manejar selección de filtro en el desplegable
-filterSelect.addEventListener("change", function () {
-  filtroActual = this.value; // Obtener el filtro seleccionado
+// Inicializar botones de vista
+function inicializarBotonesVista() {
+  document.querySelectorAll(".view-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      vistaActual = this.dataset.view;
 
-  // Generar las tarjetas filtradas
+      // Actualizar clases de botones
+      document.querySelectorAll(".view-btn").forEach((b) => {
+        b.classList.remove("active");
+      });
+      this.classList.add("active");
+
+      generarTarjetas();
+    });
+  });
+}
+
+// Función de inicialización
+function inicializar() {
+  inicializarFiltros();
+  inicializarBotonesVista();
+
+  // Establecer vista profesional como activa por defecto
+  document.querySelector('[data-view="profesional"]').classList.add("active");
+
+  // Generar tarjetas iniciales
   generarTarjetas();
-});
+}
 
-document.querySelectorAll(".view-btn").forEach((btn) => {
-  btn.addEventListener("click", function () {
-    vistaActual = this.dataset.view;
-    document
-      .querySelectorAll(".view-btn")
-      .forEach((b) => b.classList.remove("btn-active"));
-    this.classList.add("btn-active");
-    generarTarjetas();
-  });
-});
-
-// Manejar cambio de vista
-document.querySelectorAll(".view-btn").forEach((btn) => {
-  btn.addEventListener("click", function () {
-    vistaActual = this.dataset.view;
-    document
-      .querySelectorAll(".view-btn")
-      .forEach((b) => b.classList.remove("btn-active"));
-    this.classList.add("btn-active");
-    generarTarjetas();
-  });
-});
-
-// Inicializar la vista con todas las tarjetas
-generarTarjetas();
+// Iniciar cuando el DOM esté listo
+document.addEventListener("DOMContentLoaded", inicializar);
