@@ -247,8 +247,10 @@ function generarTarjetas() {
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
         <div class="row g-0 h-100">
-          <div class="col-md-4 position-relative h-100">
-            <div style="position: relative; height: 100%;">
+          <!-- En móviles la imagen ocupa todo el ancho, en tablets/desktop solo 1/3 -->
+          <div class="col-12 col-md-4 position-relative">
+            <!-- Altura fija en móviles, altura completa en desktop -->
+            <div style="position: relative; height: 200px;">
               <img src="${tarjeta.img}" 
                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="${
                      tarjeta.titulo
@@ -260,8 +262,9 @@ function generarTarjetas() {
               </button>
             </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body d-flex flex-column h-100">
+          <!-- En móviles ocupa todo el ancho, en tablets/desktop 2/3 -->
+          <div class="col-12 col-md-8">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">${tarjeta.titulo}</h5>
               <h6 class="card-subtitle mb-2 ${
                 tarjeta.estado === "RECLUTAMIENTO ACTIVO"
