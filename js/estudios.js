@@ -3,7 +3,7 @@ const tarjetas = [
   {
     id: "21",
     titulo: "MK2140-003",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio fase 2/3, aleatorizado, etiqueta abierta, con control activo, multicéntrico de zilovertamab vedotina (MK-2140) en combinación con el tratamiento de referencia en participantes con linfoma difuso de células B grandes refractario o recidivante.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Linfoma difuso de células B grandes refractario o recidivante. </li>\n<li><strong>Fase:</strong> 2/3</li>\n<li><strong>Grupos de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> MK 2140 (1,75 mg/kg Q3W) + R GemOx (6 ciclos)</li>\n<li><strong>B:</strong> R – GemOx (6 ciclos)</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandia</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT05139017</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -17,7 +17,7 @@ const tarjetas = [
   {
     id: "20",
     titulo: "MK2140-010",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio fase 3, aleatorizado, etiqueta abierta, multicéntrico de zilovertamab vedotina (MK-2140) en combinación con R-CHP frente a R-CHOP en participantes con linfoma difuso de células B grandes (DLBCL) que no recibieron tratamiento previo.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Linfoma difuso de células B grandes.</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Grupos de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> ZV + R-CHP (Q3W durante 6 ciclos)</li>\n<li><strong>B:</strong> R-CHOP (Q3W durante 6 ciclos)</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandia</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06717347</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -45,7 +45,7 @@ const tarjetas = [
   {
     id: "18",
     titulo: "DS7300-203",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio de fase 1b/2, pantumoral y abierto para evaluar la eficacia y la seguridad del Ifinatamab deruxtecán (i-dxd) en participantes con tumores sólidos recurrentes o Metastásicos.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> consta de 13 cohortes de tratamiento dirigido a los siguientes tipos de tumores: \n<ol>\n<li>Cáncer de endometrio (2L-4L)</li>\n<li>Carcinoma de células escamosas de cabeza y cuello (HNSCC) (2L/3L)</li>\n<li>Adenocarcinoma ductal pancreático (PDAC) (2L/3L)</li>\n<li>Cáncer colorrectal (CRC) (2L/3L)</li>\n<li>Carcinoma hepatocelular (CHC) (2L/3L)</li>\n<li>Adenocarcinoma de esófago, unión gastroesofágica y estómago (Ad-Eso/UGE/gástrico) (2L/3L)</li>\n<li>Carcinoma urotelial (CU) (2L-4L)</li>\n<li>Cáncer de ovario (CO) (2L+)</li>\n<li>Cáncer de cuello uterino (CCU) (2L+)</li>\n<li>Cáncer de vías biliares (CVB) (2L+)</li>\n<li>Cáncer de mama HER2 bajo (3L/4L)</li>\n<li>Cáncer de mama HER2 IHQ 0 (3L/4L)</li>\n<li>Melanoma (2L+)</li>\n</ol>\n </li>\n<li><strong>Fase:</strong> 1b/2</li>\n<li><strong>Grupos de tratamiento:</strong>\n<ul>\n<li> I-DXd 12 mg/kg c/3 semanas</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Esther Rodríguez</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06330064</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -84,7 +84,7 @@ const tarjetas = [
   {
     id: "15",
     titulo: "EvoPAR",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio de fase III aleatorizado, de 2 cohortes, doble ciego, controlado con placebo de AZD5305 en combinación con nuevos agentes hormonales elegidos por el médico en pacientes con cáncer de próstata metastásico HRRm y sin HRRm sensible a la castración.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Próstata</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>HRRm:</strong> AZD5305 + ADT + NHA (elección del investigador) / Placebo + ADT + NHA (elección del investigador)</li>\n<li><strong>No-HRRm:</strong> AZD5305 + ADT + NHA (elección del investigador) / Placebo + ADT + NHA (elección del investigador)</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -112,7 +112,7 @@ const tarjetas = [
   {
     id: "12",
     titulo: "MK3543-007",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio clínico de fase 3, aleatorizado, doble ciego, controlado con comparador activo para evaluar la eficacia y la seguridad de bomedemstat (MK-3543) frente a hidroxiurea en participantes con trombocitemia esencial que nunca han recibido tratamiento citorreductor.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Trombocitemia esencial</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Bomedemstat + Placebo Hidroxiurea</li>\n<li><strong>B:</strong> Hidroxiurea + Placebo Bomedemstat</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandía Cabas</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -126,7 +126,7 @@ const tarjetas = [
   {
     id: "11",
     titulo: "MK0616-015",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio clínico de fase 3, aleatorizado, controlado con placebo para evaluar la eficacia y la seguridad de MK-0616 en la reducción de eventos cardiovasculares adversos graves en participantes con alto riesgo cardiovascular</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Eventos Cardiovasculares</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>1:</strong> MK0616 20 mg vo + Tratamiento hipolipemiante optimizado</li>\n<li><strong>2:</strong> Placebo + Tratamiento hipolipemiante optimizado</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Germán Arriagada Suazo</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -140,7 +140,7 @@ const tarjetas = [
   {
     id: "10",
     titulo: "ANT-010",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio de fase 3, multicéntrico, aleatorizado, doble ciego, controlado con placebo, con grupos paralelos para evaluar la eficacia y la seguridad de abelacimab en pacientes de riesgo alto con fibrilación auricular que se consideran no aptos para la anticoagulación oral (LILAC).</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Fibrilación auricular</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Abelacimab 150 mg s.c. mensualmente</li>\n<li><strong>B:</strong> Placebo s.c. mensualmente</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Germán Arriagada Suazo</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
