@@ -228,6 +228,7 @@ tarjetas.forEach((tarjeta, index) => {
 // Estado inicial
 let vistaActual = "profesional";
 let filtroActual = "todos";
+let ordenActivosPrimero = true;
 
 // Función para generar tarjetas
 function generarTarjetas() {
@@ -235,10 +236,22 @@ function generarTarjetas() {
   container.innerHTML = ""; // Limpiar tarjetas anteriores
 
   // Filtrar tarjetas según el filtro actual
-  const tarjetasFiltradas = tarjetas.filter(
+  let tarjetasFiltradas = tarjetas.filter(
     (tarjeta) =>
       filtroActual === "todos" || tarjeta.etiquetas.includes(filtroActual)
   );
+
+  // Ordenar tarjetas por estado (Activos primero por defecto)
+  tarjetasFiltradas.sort((a, b) => {
+    if (a.estado === b.estado) return 0;
+    if (ordenActivosPrimero) {
+      // Activo primero
+      return a.estado === "RECLUTAMIENTO ACTIVO" ? -1 : 1;
+    } else {
+      // Activo al final
+      return a.estado === "RECLUTAMIENTO ACTIVO" ? 1 : -1;
+    }
+  });
 
   // Si no hay tarjetas que mostrar
   if (tarjetasFiltradas.length === 0) {
@@ -453,16 +466,33 @@ function inicializarBotonesVista() {
   });
 }
 
+// Inicializar el ordenamiento
+function inicializarOrden() {
+  const sortBtn = document.getElementById("sortBtn");
+  const sortIcon = document.getElementById("sortIcon");
+
+  if (sortBtn) {
+    sortBtn.addEventListener("click", function () {
+      ordenActivosPrimero = !ordenActivosPrimero;
+      sortIcon.textContent = ordenActivosPrimero
+        ? "arrow_upward"
+        : "arrow_downward";
+      generarTarjetas();
+    });
+  }
+}
+
 // Función de inicialización
 function inicializar() {
   inicializarFiltros();
   inicializarBotonesVista();
+  inicializarOrden();
 
   // Establecer valores iniciales
   vistaActual = "profesional";
-  (filtroActual = "todos"),
-    // Generar tarjetas iniciales
-    generarTarjetas();
+  filtroActual = "todos";
+  // Generar tarjetas iniciales
+  generarTarjetas();
 }
 
 // Iniciar cuando el DOM esté listo
@@ -503,6 +533,36 @@ cardStyles.textContent = `
       width: 100%;
       height: 100%;
     }
+  }
+
+  /* Estilos para el botón de ordenar */
+  .btn-sort {
+    background: none;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #495057;
+  }
+
+  .btn-sort:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+    color: #212529;
+  }
+
+  .sort-letter {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 1.1rem;
+    margin-right: 4px;
+  }
+
+  .btn-sort .material-symbols-outlined {
+    font-size: 1.2rem;
   }
 `;
 document.head.appendChild(cardStyles);

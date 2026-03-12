@@ -124,10 +124,14 @@
 
               <!-- Filtro de estudios -->
               <div class="row justify-content-center mb-4">
-                <div class="col-md-4">
-                  <select id="filterSelect" class="form-select">
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                  <select id="filterSelect" class="form-select me-3" style="max-width: 250px;">
                     <!-- Opciones generadas dinámicamente -->
                   </select>
+                  <button id="sortBtn" class="btn-sort" title="Ordenar por estado">
+                    <span class="sort-letter">A</span>
+                    <span id="sortIcon" class="material-symbols-outlined">arrow_upward</span>
+                  </button>
                 </div>
               </div>
 
