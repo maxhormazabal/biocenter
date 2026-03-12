@@ -538,9 +538,9 @@ cardStyles.textContent = `
   /* Estilos para el botón de ordenar */
   .btn-sort {
     background: none;
-    border: 1px solid #ced4da;
+    border: none;
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 6px 4px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -549,16 +549,15 @@ cardStyles.textContent = `
   }
 
   .btn-sort:hover {
-    background-color: #f8f9fa;
-    border-color: #adb5bd;
+    background-color: #f0f0f0;
     color: #212529;
   }
 
   .sort-letter {
-    font-weight: bold;
-    font-family: serif;
+    font-weight: 500;
+    font-family: inherit;
     font-size: 1.1rem;
-    margin-right: 4px;
+    margin-right: 2px;
   }
 
   .btn-sort .material-symbols-outlined {
