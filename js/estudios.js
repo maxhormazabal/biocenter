@@ -1,6 +1,42 @@
 // Datos de las tarjetas en formato JSON
 const tarjetas = [
   {
+    titulo: "D702GC00001 - ARTEMIDE LUNG 04",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio de fase III, aleatorizado, doble ciego, multicéntrico y global de la monoterapia con rilvegostomig o pembrolizumab como tratamiento de primera línea de pacientes con cáncer de pulmón no microcítico metastásico con PD-L1 alto.</p>\n<p>\n<ul>\n<li><strong>Tumor primario:</strong> Pulmón</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Rilvegostomig 750 mg c/3 semanas (hasta progresión o toxicidad inaceptable)</li>\n<li><strong>B:</strong> Pembrolizumab 200 mg c/3 semanas (hasta progresión o toxicidad inaceptable)</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Geraldo Pereira Roca</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06868277</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio de fase 3, para pacientes con cáncer de pulmón no microcítico metastásico con PD-L1 alto. El paciente recibirá monoterapia con rilvegostomig o pembrolizumab como tratamiento de primera línea.</p>',
+    etiquetas: ["todos", "Oncología"],
+    img: "./img/cover/cover1.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=D702GC00001",
+  },
+  {
+    titulo: "DS8201-793 – DESTINY LUNG 06",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Ensayo abierto, multicéntrico, aleatorizado, de fase III de trastuzumab deruxtecán en combinación con pembrolizumab frente a quimioterapia basada en platino en combinación con pembrolizumab como tratamiento de primera línea en participantes con cáncer de pulmón de células no pequeñas no escamoso, localmente avanzado irresecable o metastático, con sobreexpresión de HER2 y TPS de PD-L1 &lt;50 %.</p>\n<p>\n<ul>\n<li><strong>Tumor primario:</strong> Pulmón</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>Grupo A:</strong> T-DXd (5,4 mg/kg) + Pembrolizumab (200 mg) c/3 semanas</li>\n<li><strong>Grupo B:</strong> Pemetrexed (500 mg/m2) + quimioterapia con platino (cisplatino de 75 mg/m2 o ABC de carboplatino de 5 mg/ml/min) + Pembrolizumab (200 mg) c/3 semanas</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Esther Rodríguez De Vásquez</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06899126</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Ensayo de trastuzumab deruxtecán en combinación con pembrolizumab frente a pembrolizumab con quimioterapia basada en platino en el tratamiento de primera línea del cáncer de pulmón de células no pequeñas con sobreexpresión de HER2.</p>',
+    etiquetas: ["todos", "Oncología"],
+    img: "./img/cover/cover2.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=DS8201-793%20",
+  },
+  {
+    titulo: "DS8201-724",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Ensayo de fase 3, multicéntrico, aleatorizado, abierto, de trastuzumab deruxtecán (Enhertu&reg;) más quimioterapia con o sin pembrolizumab frente a quimioterapia más trastuzumab con o sin pembrolizumab como tratamiento de primera línea en participantes con cáncer de estómago o de la unión gastroesofágica (UGE) irresecable, localmente avanzado o metastásico con sobreexpresión de HER2.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Cáncer gástrico</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>Cohorte principal:</strong> PD-L1 CPS &ge;1:\n<ul>\n<li><strong>Rama M1:</strong> T-DXd + 5-FU o capecitabina + pembrolizumab</li>\n<li><strong>Rama M2:</strong> Trastuzumab + quimioterapia basada en platino (cisplatino + 5-FU u oxaliplatino + capecitabina) + pembrolizumab</li>\n</ul>\n</li>\n<li><strong>Cohorte exploratoria:</strong> PD-L1 CPS &lt;1:\n<ul>\n<li><strong>Rama E1:</strong> T-DXd + 5-FU o capecitabina</li>\n<li><strong>Rama E2:</strong> Trastuzumab + quimioterapia basada en platino (cisplatino + 5-FU u oxaliplatino + capecitabina)</li>\n</ul>\n</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Geraldo Pereira Roca</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06731478</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Ensayo de fase 3, de trastuzumab deruxtecán (Enhertu&reg;) más quimioterapia con o sin pembrolizumab frente a quimioterapia más trastuzumab con o sin pembrolizumab como tratamiento de primera línea en participantes con cáncer de estómago o de la unión gastroesofágica (UGE) irresecable, localmente avanzado o metastásico con sobreexpresión de HER2.</p>',
+    etiquetas: ["todos", "Cardiología"],
+    img: "./img/cover/cover3.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=DS8201-724",
+  },
+  {
     titulo: "MK2140-003",
     estado: "RECLUTAMIENTO ACTIVO",
     descripcionProfesional:
