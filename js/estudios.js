@@ -1,9 +1,8 @@
 // Datos de las tarjetas en formato JSON
 const tarjetas = [
   {
-    id: "21",
     titulo: "MK2140-003",
-    estado: "RECLUTAMIENTO CERRADO",
+    estado: "RECLUTAMIENTO ACTIVO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio fase 2/3, aleatorizado, etiqueta abierta, con control activo, multicéntrico de zilovertamab vedotina (MK-2140) en combinación con el tratamiento de referencia en participantes con linfoma difuso de células B grandes refractario o recidivante.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Linfoma difuso de células B grandes refractario o recidivante. </li>\n<li><strong>Fase:</strong> 2/3</li>\n<li><strong>Grupos de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> MK 2140 (1,75 mg/kg Q3W) + R GemOx (6 ciclos)</li>\n<li><strong>B:</strong> R – GemOx (6 ciclos)</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandia</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT05139017</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -15,7 +14,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT05139017?term=zilovertamab&page=2&rank=12",
   },
   {
-    id: "20",
     titulo: "MK2140-010",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -29,7 +27,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT06717347?term=zilovertamab&rank=10",
   },
   {
-    id: "19",
     titulo: "MK3475A-F65",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -43,7 +40,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT06504394?term=MK3475A-F65&rank=1",
   },
   {
-    id: "18",
     titulo: "DS7300-203",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -56,7 +52,6 @@ const tarjetas = [
     infoLink: "https://clinicaltrials.gov/search?term=DS7300-203",
   },
   {
-    id: "17",
     titulo: "MK2870-011",
     estado: "RECLUTAMIENTO ACTIVO",
     descripcionProfesional:
@@ -69,7 +64,6 @@ const tarjetas = [
     infoLink: "https://clinicaltrials.gov/search?term=2870%20011&checkSpell=",
   },
   {
-    id: "16",
     titulo: "CAMBRIA 2",
     estado: "RECLUTAMIENTO ACTIVO",
     descripcionProfesional:
@@ -82,7 +76,6 @@ const tarjetas = [
     infoLink: "https://clinicaltrials.gov/search?intr=CAMBRIA2",
   },
   {
-    id: "15",
     titulo: "EvoPAR",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -96,7 +89,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT06120491?cond=Prostate%20Cancer&amp;term=evopar&amp;aggFilters=status:rec&amp;rank=1",
   },
   {
-    id: "13",
     titulo: "MK1026-008",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -110,7 +102,6 @@ const tarjetas = [
       "https://www.clinicaltrials.gov/study/NCT05624554?cond=Leukemia%20Lymphocytic%20Chronic%20B-Cell&amp;intr=Nemtabrutinib&amp;rank=1",
   },
   {
-    id: "12",
     titulo: "MK3543-007",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -124,7 +115,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT06456346?term=3543%20007&amp;rank=1",
   },
   {
-    id: "11",
     titulo: "MK0616-015",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -138,21 +128,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT06008756?term=0616-015&amp;rank=1",
   },
   {
-    id: "10",
-    titulo: "ANT-010",
-    estado: "RECLUTAMIENTO CERRADO",
-    descripcionProfesional:
-      '<p class="card-text w-100">Estudio de fase 3, multicéntrico, aleatorizado, doble ciego, controlado con placebo, con grupos paralelos para evaluar la eficacia y la seguridad de abelacimab en pacientes de riesgo alto con fibrilación auricular que se consideran no aptos para la anticoagulación oral (LILAC).</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Fibrilación auricular</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Abelacimab 150 mg s.c. mensualmente</li>\n<li><strong>B:</strong> Placebo s.c. mensualmente</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Germán Arriagada Suazo</li>\n</ul>\n</li>\n</ul>\n</p>',
-    descripcionPaciente:
-      '<p class="card-text w-100">Estudio clínico para pacientes diagnosticados con Fibrilación Auricular de riesgo alto que se consideran no aptos para la anticoagulación oral.</p>',
-    etiquetas: ["todos", "Cardiología"],
-    img: "./img/estudios/est11.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
-    infoLink:
-      "https://clinicaltrials.gov/study/NCT05712200?term=ANT010&amp;rank=1",
-  },
-  {
-    id: "9",
     titulo: "CA224-1044",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -166,7 +141,6 @@ const tarjetas = [
       "https://www.clinicaltrials.gov/study/NCT06101134?intr=Nivolumab-Relatlimab&amp;locStr=Chile&amp;country=Chile&amp;rank=1",
   },
   {
-    id: "8",
     titulo: "SGNTUC-029",
     estado: "RECLUTAMIENTO ACTIVO",
     descripcionProfesional:
@@ -180,7 +154,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT05253651?term=SGNTUC-029&amp;rank=1",
   },
   {
-    id: "7",
     titulo: "MK1026-010",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -194,7 +167,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT05947851?intr=Nemtabrutinib&amp;checkSpell=&amp;locStr=Concepci%C3%B3n,%20Chile&amp;country=Chile&amp;state=Bio%20Bio&amp;city=Concepci%C3%B3n&amp;rank=1",
   },
   {
-    id: "6",
     titulo: "CAMBRIA-1 - CA MAMA",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -208,7 +180,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/study/NCT05774951?cond=Breast%20Cancer&amp;intr=Camizestrant&amp;lat=-36.8295992&amp;lng=-73.0524092&amp;locStr=Current%20Location&amp;distance=183&amp;term=D8531C00002&amp;rank=1",
   },
   {
-    id: "5",
     titulo: "Estudio MK7684A-006",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -222,7 +193,6 @@ const tarjetas = [
       "https://www.clinicaltrials.gov/ct2/results?cond=NSCLC%2C+Stage+III&amp;term=&amp;cntry=CL&amp;state=&amp;city=concepcion&amp;dist=",
   },
   {
-    id: "3",
     titulo: "Estudio SERENA-4",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -236,7 +206,6 @@ const tarjetas = [
       "https://clinicaltrials.gov/ct2/show/NCT04711252?term=AZD9833+SERENA-4&amp;draw=2&amp;rank=1",
   },
   {
-    id: "2",
     titulo: "Estudio PTG-300",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
@@ -250,6 +219,11 @@ const tarjetas = [
       "https://www.clinicaltrials.gov/study/NCT05210790?cond=Polycythemia%20Vera&amp;term=PTG-300-11&amp;rank=1",
   },
 ];
+
+// Asignar IDs autoincrementales automáticamente (de mayor a menor)
+tarjetas.forEach((tarjeta, index) => {
+  tarjeta.id = (tarjetas.length - index).toString();
+});
 
 // Estado inicial
 let vistaActual = "profesional";
