@@ -95,6 +95,38 @@ const equipo = [
     descripcion:
       "Médico Cirujano formado en Universidad Libre de Colombia seccional Barranquilla. <br> Médico Internista de la Universidad de Concepción de Chile y Sub-especialista en Oncología Médica, formado en el Instituto Nacional del Cáncer y Clínica Alemana de Santiago en convenio con la Universidad del Desarrollo de Chile.",
   },
+  {
+    nombre: "ROCIO SANHUEZA BENAVIDES",
+    cargo: "Enfermera",
+    imagen: "./img/equipo/rsanHueza.jpg",
+    modalId: "staticBackdrop15",
+    descripcion:
+      "Enfermera de la Universidad de Concepción, Especialista en cuidadosintensivos del adulto de la Universidad de Concepción. Diplomada enCardiología para profesionales de la salud por Medical and ScientificKnowledge. <br> 10 años de experiencia clínica en paciente critico cardiológico.",
+  },
+  {
+    nombre: "CAROLINA NUÑEZ MUÑOZ",
+    cargo: "Enfermera",
+    imagen: "./img/equipo/cnunez.jpg",
+    modalId: "staticBackdrop16",
+    descripcion:
+      "Enfermera e Ingeniera de Ejecución en Administración, de la Universidad delDesarrollo. Actualmente cursa diplomado en gestión de Estudios Clínicos en laPontificia Universidad Católica de Chile.",
+  },
+  {
+    nombre: "MICHELLE DE GOYENECHE RUVILAR",
+    cargo: "Enfermera",
+    imagen: "./img/equipo/mgoyeneche.jpg",
+    modalId: "staticBackdrop17",
+    descripcion:
+      "Enfermera titulada de la Universidad San Sebastián de Concepción, Cursando Diplomado De Enfermería Cardiovascular Impartido por Medical & Scientific Knowledege, Capacitación en manejo de paciente crítico. Experiencia en Hospitales públicos de la región en áreas de UCI Cardioquirúrgica y Pabellón de Hemodinamia.",
+  },
+  {
+    nombre: "CAMILA CABRERA CASTILLO",
+    cargo: "Enfermera",
+    imagen: "./img/equipo/ccabrera.jpg",
+    modalId: "staticBackdrop18",
+    descripcion:
+      "Enfermera de la Universidad del Desarrollo de Concepción, diplomado en Investigación Clínica y certificación de monitoreo de la UNIVERSIDAD DE CHILE, SANTIAGO y diplomado de hemato-oncología traslacional de la Universidad Autónoma de Chile",
+  },
 ];
 
 function createTeamHTML(equipo, integrantesPorGrupo) {
