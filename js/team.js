@@ -98,7 +98,7 @@ const equipo = [
   {
     nombre: "ROCIO SANHUEZA BENAVIDES",
     cargo: "Enfermera",
-    imagen: "./img/equipo/rsanHueza.jpg",
+    imagen: "./img/equipo/rsanhueza.jpg",
     modalId: "staticBackdrop15",
     descripcion:
       "Enfermera de la Universidad de Concepción, Especialista en cuidadosintensivos del adulto de la Universidad de Concepción. Diplomada enCardiología para profesionales de la salud por Medical and ScientificKnowledge. <br> 10 años de experiencia clínica en paciente critico cardiológico.",
