@@ -929,7 +929,8 @@ footer {
 }
 
 .footer_info img {
-  width: 300px;
+  width: 65vh;
+  padding: 5vh;
 }
 
 .footer_row {
