@@ -112,6 +112,18 @@ const tarjetas = [
     infoLink: "https://clinicaltrials.gov/search?intr=CAMBRIA2",
   },
   {
+    titulo: "AZURE-Outcomes",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio de fase III, aleatorizado, doble ciego, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Eventos Cardiovasculares</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ol>\n<li>AZD0780 30MG una vez al día VO + SoC</li>\n<li>Placebo + SoC</li>\n</ol>\n</li>\n<li><strong>Nombre del investigador principal:</strong> Dr. Jorge Burnás Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07000357</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio de fase 3, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD.</p>',
+    etiquetas: ["todos", "Cardiología"],
+    img: "./img/cover/cover1.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/study/NCT07000357",
+  },
+  {
     titulo: "EvoPAR",
     estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:

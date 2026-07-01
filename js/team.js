@@ -48,14 +48,6 @@ const equipo = [
       "Técnico Superior de Enfermería, experiencia en Servicio de Unidad de Paciente Crítico, procedimiento cardiológico y pabellón ambulatorio Dental- Médico. <br> 6 años en Servicio de Oncología, Medicina, Cirugía y Unidad de Paciente Critico en la Clínica Sanatorio Alemán. 5 años en Centro Médico RED SALUD en unidad pabellón ambulatorio dental y médico, en la unidad de procedimientos médicos y cardiológicos y vacunatorio.",
   },
   {
-    nombre: "Francisca Urrutia Jarpa",
-    cargo: "Coordinadora estudios clínicos",
-    imagen: "./img/equipo/furrutia.jpg",
-    modalId: "staticBackdrop7",
-    descripcion:
-      "Enfermera titulada de la Universidad del Desarrollo en Concepción, Especialista en Cuidados Intensivos del Adulto, Universidad de Concepción. Encargada de velar por el cumplimiento de protocolos e indicadores en salud, amplia experiencia clínica en Hospitales Públicos de la región en áreas de Urgencias, Pabellón y Cuidados Intensivos del Adulto.",
-  },
-  {
     nombre: "Geraldo Pereira Roca",
     cargo: "Oncólogo Médico",
     imagen: "./img/equipo/gpereira.jpg",
