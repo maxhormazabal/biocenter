@@ -38,7 +38,7 @@ const tarjetas = [
   },
   {
     titulo: "MK2140-003",
-    estado: "RECLUTAMIENTO ACTIVO",
+    estado: "RECLUTAMIENTO CERRADO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio fase 2/3, aleatorizado, etiqueta abierta, con control activo, multicéntrico de zilovertamab vedotina (MK-2140) en combinación con el tratamiento de referencia en participantes con linfoma difuso de células B grandes refractario o recidivante.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Linfoma difuso de células B grandes refractario o recidivante. </li>\n<li><strong>Fase:</strong> 2/3</li>\n<li><strong>Grupos de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> MK 2140 (1,75 mg/kg Q3W) + R GemOx (6 ciclos)</li>\n<li><strong>B:</strong> R – GemOx (6 ciclos)</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandia</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT05139017</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
@@ -112,16 +112,16 @@ const tarjetas = [
     infoLink: "https://clinicaltrials.gov/search?intr=CAMBRIA2",
   },
   {
-    titulo: "AZURE-Outcomes",
-    estado: "RECLUTAMIENTO ACTIVO",
+    titulo: "AZURE-Outcomes - D7960C00015",
+    estado: "RECLUTAMIENTO ABIERTO",
     descripcionProfesional:
-      '<p class="card-text w-100">Estudio de fase III, aleatorizado, doble ciego, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Eventos Cardiovasculares</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ol>\n<li>AZD0780 30MG una vez al día VO + SoC</li>\n<li>Placebo + SoC</li>\n</ol>\n</li>\n<li><strong>Nombre del investigador principal:</strong> Dr. Jorge Burnás Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07000357</li>\n</ul>\n</p>',
+      '<p class="card-text w-100">Estudio de fase III, aleatorizado, doble ciego, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Dislipidemia</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> AZD0780 30mg vo 1 vez al día + hipolipemiante de base</li>\n<li><strong>B:</strong> Placebo vo 1 vez al día + hipolipemiante de base</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Jorge Burnás Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07000357</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
-      '<p class="card-text w-100">Estudio de fase 3, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD.</p>',
+      '<p class="card-text w-100">Estudio de fase III de AZD0780 sobre eventos adversos cardiovasculares mayores en pacientes con antecedentes de eventos de ASCVD o con alto riesgo de un primer evento.</p>',
     etiquetas: ["todos", "Cardiología"],
     img: "./img/cover/cover1.jpg",
     videoLink: "#",
-    infoLink: "https://clinicaltrials.gov/study/NCT07000357",
+    infoLink: "https://clinicaltrials.gov/search?term=D7960C00015&amp;viewType=Card",
   },
   {
     titulo: "EvoPAR",
@@ -132,7 +132,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico de fase 3, para pacientes con diagnóstico de Cáncer de Próstata metastásico sensible a la castración. Los pacientes recibirán AZD5305 (droga de estudio) + terapia con nuevos agentes hormonales.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/estudios/est16.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
+    videoLink: "https://youtu.be/etk8Axx5XZI",
     infoLink:
       "https://clinicaltrials.gov/study/NCT06120491?cond=Prostate%20Cancer&amp;term=evopar&amp;aggFilters=status:rec&amp;rank=1",
   },
@@ -145,7 +145,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para pacientes con diagnóstico de Leucemia Linfocítica Crónica o Linfoma Linfocítico Pequeño, que no hayan sido tratados previamente. Los pacientes recibirán inhibidor de BTK o quimioinmunoterapia.</p>',
     etiquetas: ["todos", "Hematología"],
     img: "./img/estudios/est14.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
+    videoLink: "https://youtu.be/DfYsoOovKww",
     infoLink:
       "https://www.clinicaltrials.gov/study/NCT05624554?cond=Leukemia%20Lymphocytic%20Chronic%20B-Cell&amp;intr=Nemtabrutinib&amp;rank=1",
   },
@@ -158,7 +158,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico, para pacientes diagnosticados con con trombocitemia esencial que nunca han recibido tratamiento citorreductor. Los pacientes recibirán Bomedemstat (MK-3543) o Hidroxiurea por via oral.</p>',
     etiquetas: ["todos", "Hematología"],
     img: "./img/estudios/est13.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
+    videoLink: "https://youtu.be/huG8hhoNpLY",
     infoLink:
       "https://clinicaltrials.gov/study/NCT06456346?term=3543%20007&amp;rank=1",
   },
@@ -171,7 +171,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para evaluar la eficacia y la seguridad de MK-0616 (Enlicitide) en la reducción de eventos cardiovasculares adversos graves en participantes con alto riesgo cardiovascular.</p>',
     etiquetas: ["todos", "Cardiología"],
     img: "./img/estudios/est12.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
+    videoLink: "https://youtu.be/jg-DXrei0a0",
     infoLink:
       "https://clinicaltrials.gov/study/NCT06008756?term=0616-015&amp;rank=1",
   },
@@ -184,7 +184,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para pacientes con diagnóstico de melanoma en el que se evalúa la preferencia del paciente en relación a la vía de administración de Nivolumab, endovenosa o subcutánea.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/estudios/est10.jpg",
-    videoLink: "https://youtu.be/DOfie9PVIOE",
+    videoLink: "https://youtu.be/JVTuwpyWU9Q",
     infoLink:
       "https://www.clinicaltrials.gov/study/NCT06101134?intr=Nivolumab-Relatlimab&amp;locStr=Chile&amp;country=Chile&amp;rank=1",
   },
@@ -197,20 +197,20 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico de fase 3, para pacientes con cáncer colorrectal metastásico con mutación HER2+, con dos ramas de tratamiento: medicamentos antiHER2+ (Tucatinib y Trastuzumab) junto a quimioterapia estándar vs quimioterapia y anticuerpos monoclonales.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/estudios/est9.jpg",
-    videoLink: "https://youtu.be/aHNdRCToNSg",
+    videoLink: "https://youtu.be/fEyimY1mHb8",
     infoLink:
       "https://clinicaltrials.gov/study/NCT05253651?term=SGNTUC-029&amp;rank=1",
   },
   {
     titulo: "MK1026-010",
-    estado: "RECLUTAMIENTO CERRADO",
+    estado: "RECLUTAMIENTO ABIERTO",
     descripcionProfesional:
       '<p class="card-text w-100">Estudio aleatorizado, de etiqueta abierta, de fase 3 para comparar la eficacia y la seguridad de nemtabrutinib (MK-1026) más venetoclax frente a venetoclax más rituximab en participantes con leucemia linfocítica crónica/linfoma linfocítico de células pequeñas recidivantes/refractarios después de al menos 1 tratamiento previo (BELLWAVE-010)</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Leucemia linfocítica crónica/linfoma linfocítico de células pequeñas recidivantes/refractarios</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Rama de tratamiento:</strong>\n<ul>\n<li><strong>1:</strong> Nemtabrutinib (MK-1026) + Venetoclax</li>\n<li><strong>2:</strong> Venetoclax + Rituximab</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandía</li>\n</ul>\n</li>\n</ul>\n</p>',
     descripcionPaciente:
       '<p class="card-text w-100">Estudio clínico para pacientes con diagnóstico de leucemia linfocítica crónica/linfoma linfocítico de células pequeñas recidivantes o refractarios que no hayan respondido, al menos a 1 tratamiento previo.</p>',
     etiquetas: ["todos", "Hematología"],
     img: "./img/estudios/est8.jpg",
-    videoLink: "https://youtu.be/KbPIBDpyJq8",
+    videoLink: "https://youtu.be/r78EaGCKbiU",
     infoLink:
       "https://clinicaltrials.gov/study/NCT05947851?intr=Nemtabrutinib&amp;checkSpell=&amp;locStr=Concepci%C3%B3n,%20Chile&amp;country=Chile&amp;state=Bio%20Bio&amp;city=Concepci%C3%B3n&amp;rank=1",
   },
@@ -223,7 +223,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para pacientes con diagnóstico de Cáncer de mama, con riesgo intermedio o alto de recurrencia, que hayan completado la terapia de referencia (cirugía/radioterapia) y al menos dos años de terapia endocrina sin recurrencia de la enfermedad.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/estudios/est7.jpg",
-    videoLink: "https://youtu.be/Qd3YeVIZgtE",
+    videoLink: "#",
     infoLink:
       "https://clinicaltrials.gov/study/NCT05774951?cond=Breast%20Cancer&amp;intr=Camizestrant&amp;lat=-36.8295992&amp;lng=-73.0524092&amp;locStr=Current%20Location&amp;distance=183&amp;term=D8531C00002&amp;rank=1",
   },
@@ -236,7 +236,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico de fase 3, para pacientes con diagnóstico de Cáncer de Pulmón de células no pequeñas en estadio III, localmente avanzado no operable. El paciente recibirá inmunoterapia + quimioterapia + radioterapia.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/cover/cover5.jpg",
-    videoLink: "https://youtu.be/blGFNF3cobY",
+    videoLink: "#",
     infoLink:
       "https://www.clinicaltrials.gov/ct2/results?cond=NSCLC%2C+Stage+III&amp;term=&amp;cntry=CL&amp;state=&amp;city=concepcion&amp;dist=",
   },
@@ -249,7 +249,7 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para pacientes diagnosticados con cáncer de mama avanzado, que no han recibido ningún tratamiento sistémico para enfermedad avanzada.</p>',
     etiquetas: ["todos", "Oncología"],
     img: "./img/cover/cover2.jpg",
-    videoLink: "https://youtu.be/YrBh6Em1guw",
+    videoLink: "https://youtu.be/4Ic9X_PncFM",
     infoLink:
       "https://clinicaltrials.gov/ct2/show/NCT04711252?term=AZD9833+SERENA-4&amp;draw=2&amp;rank=1",
   },
@@ -262,9 +262,94 @@ const tarjetas = [
       '<p class="card-text w-100">Estudio clínico para pacientes diagnosticados con Policitemia Vera que requieren la realización de sangrías frecuentes. Los pacientes recibirán medicamento de estudio por vía subcutánea.</p>',
     etiquetas: ["todos", "Hematología"],
     img: "./img/cover/cover6.jpg",
-    videoLink: "https://youtu.be/AvmGJmXFNq4",
+    videoLink: "https://youtu.be/T0ZpsPM2DJ8",
     infoLink:
       "https://www.clinicaltrials.gov/study/NCT05210790?cond=Polycythemia%20Vera&amp;term=PTG-300-11&amp;rank=1",
+  },
+  {
+    titulo: "D7700C00003",
+    estado: "RECLUTAMIENTO ABIERTO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio de fase IIb, aleatorizado, doble ciego, controlado con placebo, paralelo y con dosis múltiples para evaluar la eficacia, la seguridad y la PK de AZD0292 en participantes de mínimo 12 años de edad con bronquiectasia y colonización crónica por pseudomonas aeruginosa.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Bronquiectasia</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> AZD0292 450 mg el día 1 seguido de una dosis de mantenimiento de 150 mg cada 4 semanas ev</li>\n<li><strong>B:</strong> AZD0292 150 mg el día 1 seguido de una dosis de mantenimiento de 50 mg cada 4 semanas ev</li>\n<li><strong>C:</strong> Placebo cada 4 semanas ev</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Milenko Grbic Reyes</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07088926</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio para evaluar la eficacia, la seguridad y la PK de AZD0292 administrado por vía intravenosa en participantes de 12 años de edad como mínimo con bronquiectasias y colonización crónica por pseudomonas aeruginosa.</p>',
+    etiquetas: ["todos", "Broncopulmonar"],
+    img: "./img/cover/cover1.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=D7700C00003&amp;viewType=Card",
+  },
+  {
+    titulo: "BalanceD-HF - D6402C00012",
+    estado: "RECLUTAMIENTO ABIERTO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio de fase III, aleatorizado y doble ciego para evaluar el efecto de Balcinrenona/dapagliflozina, en comparación con Dapagliflozina, sobre el riesgo de eventos de insuficiencia cardíaca y muerte cardiovascular en pacientes con insuficiencia cardíaca y deterioro de la función renal.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Insuficiencia cardiaca</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Balcinrenona 15 mg/Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>B:</strong> Balcinrenona 40 mg/Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>C:</strong> Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Jorge Burnás Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06307652</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio de fase III para evaluar el efecto de Balcinrenona/Dapagliflozina en pacientes con insuficiencia cardiaca y deterioro de la función renal.</p>',
+    etiquetas: ["todos", "Cardiología"],
+    img: "./img/cover/cover2.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=D6402C00012&amp;viewType=Card",
+  },
+  {
+    titulo: "ANT-010",
+    estado: "RECLUTAMIENTO CERRADO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio de fase 3, multicéntrico, aleatorizado, doble ciego, controlado con placebo, con grupos paralelos para evaluar la eficacia y la seguridad de abelacimab en pacientes de riesgo alto con fibrilación auricular que se consideran no aptos para la anticoagulación oral (LILAC).</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Fibrilación auricular</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Abelacimab 150 mg s.c. mensualmente</li>\n<li><strong>B:</strong> Placebo s.c. mensualmente</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Germán Arriagada Suazo</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio clínico para pacientes diagnosticados con Fibrilación Auricular de riesgo alto que se consideran no aptos para la anticoagulación oral.</p>',
+    etiquetas: ["todos", "Cardiología"],
+    img: "./img/cover/cover3.jpg",
+    videoLink: "https://youtu.be/OAl4FshEcTk",
+    infoLink: "https://clinicaltrials.gov/study/NCT05712200?term=ANT010&amp;rank=1",
+  },
+  {
+    titulo: "EMBOLD - D7260C00015",
+    estado: "RECLUTAMIENTO ABIERTO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Protocolo maestro multicéntrico, aleatorizado, doble ciego y controlado con placebo de fase III para evaluar la eficacia y seguridad de elecogliprón en participantes con obesidad o sobrepeso, con o sin diabetes mellitus tipo 2.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Obesidad</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Elecogliprón 45 mg orales una vez al día durante 72 semanas</li>\n<li><strong>B:</strong> Elecogliprón 65 mg orales una vez al día durante 72 semanas</li>\n<li><strong>C:</strong> Placebo orales una vez al día durante 72 semanas</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Fernanda Hidalgo Cabezas</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07667803</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Protocolo maestro para investigar la eficacia y la seguridad del elecogliprón en participantes con obesidad o sobrepeso, con o sin diabetes mellitus tipo 2.</p>',
+    etiquetas: ["todos", "Medicina"],
+    img: "./img/cover/cover4.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=D7260C00015&amp;viewType=Card",
+  },
+  {
+    titulo: "DS8201-854 – DESTINY ENDOMETRIAL 02",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Ensayo abierto, multicéntrico, aleatorizado, de fase III de trastuzumab deruxtecán comparado con quimioterapia del tratamiento de referencia con o sin radioterapia como tratamiento adyuvante para el cáncer de endometrio con expresión de HER2 (IHC 3+/2+).</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Cáncer de Endometrio</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> T-DXd 5,4 mg/kg c/3 semanas (17 ciclos) &plusmn; VCB (concomitante o posterior)</li>\n<li><strong>B:</strong> Quimioterapia de Carboplatino con ABC 5 o 6 y paclitaxel 175 mg/m2 c/3 semanas (6 ciclos) &plusmn; VCB (concomitante o posterior)</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Esther Rodríguez De Vásquez</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07022483</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio de fase 3, de trastuzumab deruxtecán con o sin radioterapia frente a quimioterapia basada en platino con o sin radioterapia para pacientes con cáncer de endometrio con expresión de HER2+.</p>',
+    etiquetas: ["todos", "Oncología"],
+    img: "./img/cover/cover5.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=NCT07022483",
+  },
+  {
+    titulo: "ROSETTA Lung-202 - CA2660002",
+    estado: "RECLUTAMIENTO ACTIVO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio aleatorizado, doble ciego, de fase 3, de monoterapia con Pumitamig comparada con pembrolizumab como tratamiento de primera línea en participantes con cáncer de pulmón de células no pequeñas localmente avanzado o metastásico con PD-L1 &ge; 50%.</p>\n<p>\n<ul>\n<li><strong>Tumor primario:</strong> Pulmón</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Pumitamig 1200 mg Q3W &lt;50 kg o 1500 mg Q3W &gt;50 kg i.v.</li>\n<li><strong>B:</strong> Pembrolizumab 200 mg Q3W i.v.</li>\n<li><strong>Nombre del investigador principal</strong> Dr. José Barbosa Hernández</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07361510</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio de pumitamig frente a pembrolizumab en participantes con cáncer de pulmón no microcítico avanzado sin tratamiento previo y PD-L1 &ge; 50 %.</p>',
+    etiquetas: ["todos", "Oncología"],
+    img: "./img/cover/cover6.jpg",
+    videoLink: "#",
+    infoLink: "https://clinicaltrials.gov/search?term=CA2660002&amp;viewType=Card",
+  },
+  {
+    titulo: "Estudio MK7684A-007",
+    estado: "RECLUTAMIENTO CERRADO",
+    descripcionProfesional:
+      '<p class="card-text w-100">Estudio aleatorizado, doble ciego, de fase 3 de MK-7684A más quimioterapia frente a pembrolizumab más quimioterapia como primera línea de tratamiento en participantes con cáncer de pulmón de células no pequeñas metastásico.</p>\n<p>\n<ul>\n<li><strong>Tumor primario:</strong> Pulmón</li>\n<li><strong>Fase:</strong> 3</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Vibostolimab / Pembrolizumab + QT</li>\n<li><strong>B:</strong> Pembrolizumab + QT</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Esther Rodríguez De Vásquez</li>\n</ul>\n</li>\n</ul>\n</p>',
+    descripcionPaciente:
+      '<p class="card-text w-100">Estudio clínico para pacientes diagnosticados con Cáncer de Pulmón de células no pequeñas, metastásico. El paciente recibirá quimioterapia e inmunoterapia.</p>',
+    etiquetas: ["todos", "Oncología"],
+    img: "./img/cover/cover1.jpg",
+    videoLink: "#",
+    infoLink:
+      "https://www.clinicaltrials.gov/ct2/results?cond=Lung+Cancer+Metastatic&amp;term=&amp;cntry=CL&amp;state=&amp;city=Concepci%C3%B3n&amp;dist=",
   },
 ];
 
@@ -277,6 +362,11 @@ tarjetas.forEach((tarjeta, index) => {
 let vistaActual = "profesional";
 let filtroActual = "todos";
 let ordenActivosPrimero = true;
+
+// Un estudio se considera "abierto" (en reclutamiento) salvo que su estado sea explícitamente CERRADO
+function esReclutamientoAbierto(estado) {
+  return estado !== "RECLUTAMIENTO CERRADO";
+}
 
 // Función para generar tarjetas
 function generarTarjetas() {
@@ -291,13 +381,14 @@ function generarTarjetas() {
 
   // Ordenar tarjetas por estado (Activos primero por defecto)
   tarjetasFiltradas.sort((a, b) => {
-    if (a.estado === b.estado) return 0;
+    if (esReclutamientoAbierto(a.estado) === esReclutamientoAbierto(b.estado))
+      return 0;
     if (ordenActivosPrimero) {
       // Activo primero
-      return a.estado === "RECLUTAMIENTO ACTIVO" ? -1 : 1;
+      return esReclutamientoAbierto(a.estado) ? -1 : 1;
     } else {
       // Activo al final
-      return a.estado === "RECLUTAMIENTO ACTIVO" ? 1 : -1;
+      return esReclutamientoAbierto(a.estado) ? 1 : -1;
     }
   });
 
@@ -339,7 +430,7 @@ function generarTarjetas() {
             <div class="card-body h-100 d-flex flex-column">
               <h5 class="card-title">${tarjeta.titulo}</h5>
               <h6 class="card-subtitle mb-2 ${
-                tarjeta.estado === "RECLUTAMIENTO ACTIVO"
+                esReclutamientoAbierto(tarjeta.estado)
                   ? "text-success"
                   : "text-danger"
               }">${tarjeta.estado}</h6>
@@ -374,7 +465,14 @@ function generarTarjetas() {
 }
 
 // Definir filtros disponibles
-const filtros = ["todos", "Oncología", "Cardiología", "Hematología"];
+const filtros = [
+  "todos",
+  "Oncología",
+  "Cardiología",
+  "Hematología",
+  "Broncopulmonar",
+  "Medicina",
+];
 
 // Función para formatear strings (convertir snake_case a Title Case)
 function formatString(str) {
