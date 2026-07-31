@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-forge-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Forge deploy hook
+        run: curl -fsS "${{ secrets.FORGE_DEPLOY_HOOK_URL }}"
