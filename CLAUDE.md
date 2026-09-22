@@ -64,6 +64,14 @@ Los datos que varían por sucursal — estudios clínicos, equipo, contacto/dire
 
 **Regla clave:** para cambiar estudios, equipo o datos de contacto, edita `js/data/sedes.js`. Nunca edites esos datos directamente en el HTML.
 
+### Origen de los estudios de Concepción
+
+Los estudios de Concepción se reconstruyeron a partir de los Word del cliente en `documentos_estudios_concepcion/` (versión julio 2026), que son la fuente de verdad del contenido clínico. Ese directorio está en `.gitignore`.
+
+Dentro de `estudios` los registros van agrupados por documento de origen, con un comentario de cabecera por grupo. `img` y `videoLink` NO vienen en los Word: se conservan de lo ya publicado, así que si rehaces la importación, arrástralos en lugar de regenerarlos.
+
+Al final del arreglo hay un bloque rotulado **SIN RESPALDO EN LOS DOCUMENTOS DE JULIO 2026** con cuatro estudios cerrados que siguen publicados pero no aparecen en los Word. Están a la espera de que el cliente confirme si se retiran. No los borres sin esa confirmación.
+
 **Contenido compartido duplicado:** el HTML de FAQ, "por qué Biocenter" y otros textos institucionales está duplicado entre `concepcion.html` y `chillan.html` (no hay includes ni templating). Cualquier cambio a ese contenido compartido hay que aplicarlo a mano en ambas páginas.
 
 Antes de tocar estilos o añadir UI, consultar `design.md` (guía de estilo del proyecto).
@@ -93,7 +101,16 @@ python3 -m http.server 8000
 
 ## Pendiente
 
-La sucursal de **Chillán** está creada y funcionando, pero sin datos reales: en `js/data/sedes.js` sus arreglos `equipo` y `estudios` están vacíos y sus campos de contacto son placeholders marcados con `TODO`. Las páginas muestran estados vacíos explícitos mientras tanto. **No inventes personal clínico ni estudios de investigación**: espera los datos reales del cliente.
+La sucursal de **Chillán** está creada y funcionando. Su dirección ya es la definitiva (18 de Septiembre 246, of. 916). Sigue pendiente en `js/data/sedes.js`:
+
+- `telefono` / `telefonoHref` — en `null`. **No los rellenes con el número de Concepción.**
+- `email` y `formulario` — hoy usan los corporativos; falta confirmar si Chillán tiene propios.
+- `equipo` y `estudios` — arreglos vacíos.
+- `mapsUrl` — es una búsqueda por dirección; sustituir por la ficha de Google Maps del centro cuando exista.
+
+**No inventes personal clínico ni estudios de investigación**: espera los datos reales del cliente.
+
+Los campos de contacto en `null` hacen que `sede.js` y `linktree.js` **omitan** esa fila, en vez de mostrar el dato de la otra sucursal. Si añades un campo de contacto nuevo, mantén ese criterio: mostrar el teléfono equivocado manda al paciente al centro que no es.
 
 ## Deuda conocida y gotchas
 

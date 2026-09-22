@@ -8,6 +8,17 @@
    Requiere que js/data/sedes.js se cargue ANTES que este archivo. */
 
 (function () {
+  /* Un acceso rápido sin dato (p. ej. una sucursal todavía sin teléfono
+     propio) no se dibuja, en vez de mostrar el dato de la otra sucursal. */
+  function accion(icono, href, etiqueta, titulo, dato, externo) {
+    if (!dato) return "";
+    return `
+      <a ${externo ? 'target="_blank" rel="noopener"' : ""} href="${href}" title="${titulo}">
+        <span class="material-symbols-outlined">${icono}</span>
+        <small>${etiqueta}</small>
+      </a>`;
+  }
+
   function tarjetaSede(sede) {
     const c = sede.contacto;
     return `
@@ -30,18 +41,12 @@
         </a>
 
         <div class="sede_card_acciones">
-          <a href="tel:${c.telefonoHref}" title="Llamar a ${sede.nombre}">
-            <span class="material-symbols-outlined">phone_in_talk</span>
-            <small>${c.telefono}</small>
-          </a>
-          <a href="mailto:${c.email}" title="Escribir a ${sede.nombre}">
-            <span class="material-symbols-outlined">mail</span>
-            <small>${c.email}</small>
-          </a>
-          <a target="_blank" rel="noopener" href="${c.mapsUrl}" title="Cómo llegar a ${sede.nombre}">
-            <span class="material-symbols-outlined">location_on</span>
-            <small>Cómo llegar</small>
-          </a>
+          ${accion("phone_in_talk", "tel:" + c.telefonoHref, c.telefono,
+                   `Llamar a ${sede.nombre}`, c.telefono)}
+          ${accion("mail", "mailto:" + c.email, "Escribir",
+                   c.email, c.email)}
+          ${accion("location_on", c.mapsUrl, "Cómo llegar",
+                   `Cómo llegar a ${sede.nombre}`, c.mapsUrl, true)}
         </div>
       </article>`;
   }

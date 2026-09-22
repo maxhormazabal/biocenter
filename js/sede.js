@@ -22,23 +22,25 @@
       el.textContent = sede.nombre;
     });
 
-    // Bloque de dirección / correo / teléfono del footer
+    // Bloque de dirección / correo / teléfono del footer.
+    // Una fila sin dato se omite: es preferible a mostrar el dato de la otra
+    // sucursal (ver js/data/sedes.js).
+    const fila = (icono, href, texto, externo) =>
+      texto
+        ? `<div class="footer_row">
+             <span class="material-symbols-outlined">${icono}</span>
+             <a ${externo ? 'target="_blank" rel="noopener"' : ""} href="${href}">${texto}</a>
+           </div>`
+        : "";
+
     document
       .querySelectorAll('[data-sede-render="contacto-footer"]')
       .forEach((el) => {
-        el.innerHTML = `
-          <div class="footer_row">
-            <span class="material-symbols-outlined">location_on</span>
-            <a target="_blank" href="${c.mapsUrl}">${c.direccion}</a>
-          </div>
-          <div class="footer_row">
-            <span class="material-symbols-outlined">mail</span>
-            <a href="mailto:${c.email}">${c.email}</a>
-          </div>
-          <div class="footer_row">
-            <span class="material-symbols-outlined">phone_in_talk</span>
-            <a href="tel:${c.telefonoHref}">${c.telefono}</a>
-          </div>`;
+        el.innerHTML = [
+          fila("location_on", c.mapsUrl, c.direccion, true),
+          fila("mail", "mailto:" + c.email, c.email, false),
+          fila("phone_in_talk", "tel:" + c.telefonoHref, c.telefono, false),
+        ].join("");
       });
 
     // Enlace al formulario de contacto
