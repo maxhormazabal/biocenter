@@ -15,6 +15,13 @@
    Las rutas de imágenes son relativas con prefijo "./" y todas las páginas
    HTML viven en la raíz del repo: no muevas páginas a subcarpetas o estas
    rutas dejarán de resolver.
+
+   VOCABULARIO DE `estado`: solo dos valores, "RECLUTAMIENTO ACTIVO" y
+   "RECLUTAMIENTO CERRADO". Los Word del cliente alternan entre "ACTIVO" y
+   "ABIERTO" según la especialidad; al importar hay que normalizar todo lo
+   que recluta a "RECLUTAMIENTO ACTIVO". js/estudios.js considera abierto
+   cualquier estado distinto de "RECLUTAMIENTO CERRADO", así que un tercer
+   valor no rompería nada, pero se vería como dos palabras para lo mismo.
    ========================================================================== */
 
 const SEDES = {
@@ -346,7 +353,7 @@ const SEDES = {
       /* ----- CARDIOLOGÍA — fuente: Informacion_estudios_cardiologia_para_publicar_julio_2026_do.txt ----- */
       {
         titulo: "AZURE-Outcomes - D7960C00015",
-        estado: "RECLUTAMIENTO ABIERTO",
+        estado: "RECLUTAMIENTO ACTIVO",
         descripcionProfesional:
           "<p class=\"card-text w-100\">Estudio de fase III, aleatorizado, doble ciego, controlado con placebo y de grupos paralelos para evaluar el efecto de AZD0780 en eventos cardiovasculares adversos mayores en pacientes con enfermedad cardiovascular aterosclerótica establecida (ASCVD) o con alto riesgo de un primer evento ASCVD</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Dislipidemia</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> AZD0780 30mg vo 1 vez al día + hipolipemiante de base</li>\n<li><strong>B:</strong> Placebo vo 1 vez al día + hipolipemiante de base</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Jorge Burnas Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07000357</li>\n</ul>\n</li>\n</ul>\n</p>",
         descripcionPaciente:
@@ -358,7 +365,7 @@ const SEDES = {
       },
       {
         titulo: "BalanceD-HF - D6402C00012",
-        estado: "RECLUTAMIENTO ABIERTO",
+        estado: "RECLUTAMIENTO ACTIVO",
         descripcionProfesional:
           "<p class=\"card-text w-100\">Estudio de fase III, aleatorizado y doble ciego para evaluar el efecto de Balcinrenona/dapagliflozina, en comparación con Dapagliflozina, sobre el riesgo de eventos de insuficiencia cardíaca y muerte cardiovascular en pacientes con insuficiencia cardíaca y deterioro de la función renal.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Insuficiencia cardiaca</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Balcinrenona 15 mg/Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>B:</strong> Balcinrenona 40 mg/Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>C:</strong> Dapagliflozina 10 mg vo 1 vez al día</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Jorge Burnas Folch</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT06307652</li>\n</ul>\n</li>\n</ul>\n</p>",
         descripcionPaciente:
@@ -420,7 +427,7 @@ const SEDES = {
       },
       {
         titulo: "MK1026-010",
-        estado: "RECLUTAMIENTO ABIERTO",
+        estado: "RECLUTAMIENTO ACTIVO",
         descripcionProfesional:
           "<p class=\"card-text w-100\">Estudio aleatorizado, de etiqueta abierta, de fase 3 para comparar la eficacia y la seguridad de nemtabrutinib (MK-1026) más venetoclax frente a venetoclax más rituximab en participantes con leucemia linfocítica crónica/linfoma linfocítico de células pequeñas recidivantes/refractarios después de al menos 1 tratamiento previo (BELLWAVE-010)</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Leucemia linfocítica crónica/linfoma linfocítico de células pequeñas recidivantes/refractarios</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li>Nemtabrutinib (MK-1026) + Venetoclax</li>\n<li>Venetoclax + Rituximab</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Mauricio Chandía Cabas</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT05947851</li>\n</ul>\n</li>\n</ul>\n</p>",
         descripcionPaciente:
@@ -446,7 +453,7 @@ const SEDES = {
       /* ----- BRONCOPULMONAR — fuente: Informacion_estudios_broncopulmonar_para_publicar_julio_2026.txt ----- */
       {
         titulo: "D7700C00003",
-        estado: "RECLUTAMIENTO ABIERTO",
+        estado: "RECLUTAMIENTO ACTIVO",
         descripcionProfesional:
           "<p class=\"card-text w-100\">Estudio de fase IIb, aleatorizado, doble ciego, controlado con placebo, paralelo y con dosis múltiples para evaluar la eficacia, la seguridad y la PK de AZD0292 en participantes de mínimo 12 años de edad con bronquiectasia y colonización crónica por pseudomonas aeruginosa.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Bronquiectasia</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> AZD0292 450 mg el día 1 seguido de una dosis de mantenimiento de 150 mg cada 4 semanas ev</li>\n<li><strong>B:</strong> AZD0292 150 mg el día 1 seguido de una dosis de mantenimiento de 50 mg cada 4 semanas ev</li>\n<li><strong>C:</strong> Placebo cada 4 semanas ev</li>\n<li><strong>Nombre del investigador principal</strong> Dr. Milenko Grbic Reyes</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07088926</li>\n</ul>\n</li>\n</ul>\n</p>",
         descripcionPaciente:
@@ -460,7 +467,7 @@ const SEDES = {
       /* ----- MEDICINA — fuente: Informacion_estudios_medicina_para_publicar_julio_2026_docx.txt ----- */
       {
         titulo: "EMBOLD - D7260C00015",
-        estado: "RECLUTAMIENTO ABIERTO",
+        estado: "RECLUTAMIENTO ACTIVO",
         descripcionProfesional:
           "<p class=\"card-text w-100\">Protocolo maestro multicéntrico, aleatorizado, doble ciego y controlado con placebo de fase III para evaluar la eficacia y seguridad de elecogliprón en participantes con obesidad o sobrepeso, con o sin diabetes mellitus tipo 2.</p>\n<p>\n<ul>\n<li><strong>Patología:</strong> Obesidad</li>\n<li><strong>Fase:</strong> III</li>\n<li><strong>Ramas de tratamiento:</strong>\n<ul>\n<li><strong>A:</strong> Elecogliprón 45 mg orales una vez al día durante 72 semanas</li>\n<li><strong>B:</strong> Elecogliprón 65 mg orales una vez al día durante 72 semanas</li>\n<li><strong>C:</strong> Placebo orales una vez al día durante 72 semanas</li>\n<li><strong>Nombre del investigador principal</strong> Dra. Fernanda Hidalgo Cabezas</li>\n<li><strong>Código clinicaltrials.gov:</strong> NCT07667803</li>\n</ul>\n</li>\n</ul>\n</p>",
         descripcionPaciente:
@@ -531,19 +538,21 @@ const SEDES = {
   /* ------------------------------------------------------------------ */
   /* CHILLÁN                                                             */
   /* ------------------------------------------------------------------ */
-  /* Sucursal en marcha: la dirección ya es la definitiva. Lo que sigue
-     pendiente está marcado con TODO más abajo.
+  /* Estado al 22-09-2026: la DIRECCIÓN es todo lo que el cliente tiene de
+     esta sucursal por ahora. No es un descuido ni algo a medio hacer; el
+     resto llegará más adelante. La página funciona con eso:
 
-     Los campos de contacto que todavía no se conocen valen `null`: sede.js y
-     linktree.js OMITEN la fila correspondiente en vez de mostrar un dato de
-     otra sucursal. No los rellenes con los valores de Concepción — un
-     teléfono equivocado manda al paciente al centro que no es.
+       - `telefono` en null  -> sede.js y linktree.js omiten esa fila. No lo
+         rellenes con el número de Concepción: un teléfono equivocado manda
+         al paciente al centro que no es.
+       - `email` y `formulario` son los corporativos de BIOCENTER, no los de
+         Concepción, así que sirven para ambas sucursales.
+       - `equipo` y `estudios` vacíos -> las páginas muestran estados vacíos
+         explícitos. No se inventa personal clínico ni estudios.
 
-     Los arreglos `equipo` y `estudios` están intencionalmente vacíos: no se
-     inventa personal clínico ni estudios de investigación. Al completarlos,
-     copia la misma FORMA de objeto usada en Concepción, pero NO reutilices
-     sus valores de `modalId`: cada integrante necesita un id propio dentro
-     de su sucursal (prefijo `chillanBackdrop1`, `chillanBackdrop2`, …). */
+     Cuando lleguen los datos: copia la misma FORMA de objeto usada en
+     Concepción, pero NO reutilices sus valores de `modalId`; cada integrante
+     necesita un id propio (prefijo `chillanBackdrop1`, `chillanBackdrop2`…). */
   chillan: {
     slug: "chillan",
     nombre: "Chillán",
@@ -551,6 +560,8 @@ const SEDES = {
     home: "./chillan.html",
     estudiosPagina: "./chillan-estudios.html",
     contacto: {
+      // Tal como lo entregó el cliente. No se infiere el piso a partir del
+      // número de oficina: no lo sabemos.
       direccion:
         "Edificio Centro Urbano 18S, 18 de Septiembre 246, of. 916. Chillán",
       // Búsqueda por dirección. TODO: reemplazar por el enlace de la ficha
@@ -558,25 +569,22 @@ const SEDES = {
       // exacto en vez de la calle.
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=18%20de%20Septiembre%20246%2C%20Chill%C3%A1n%2C%20Chile",
-      // TODO: confirmar si Chillán usa un correo propio. Mientras tanto se
-      // usa el corporativo, que sí es compartido.
+      // Correo corporativo de BIOCENTER, compartido por ambas sucursales.
       email: "contacto@biocenter.cl",
-      // TODO: teléfono de la sucursal de Chillán. En null hasta tenerlo: se
-      // oculta la fila en vez de mostrar el número de Concepción.
+      // Pendiente de entrega. En null a propósito: la fila se oculta.
       telefono: null,
       telefonoHref: null,
-      // TODO: confirmar si Chillán usa un formulario propio
+      // Formulario general de BIOCENTER, compartido por ambas sucursales.
       formulario: "https://forms.gle/Gw8bVkeXEmGBjLDq9",
     },
 
-    // TODO: integrantes del equipo de Chillán (misma forma que Concepción:
-    // { nombre, cargo, imagen, modalId, descripcion }). `modalId` debe ser
-    // único dentro de este arreglo, p. ej. "chillanBackdrop1".
+    // Pendiente de entrega. Forma: { nombre, cargo, imagen, modalId,
+    // descripcion }, con `modalId` único dentro de este arreglo
+    // (p. ej. "chillanBackdrop1").
     equipo: [],
 
-    // TODO: estudios clínicos de Chillán (misma forma que Concepción:
-    // { titulo, estado, descripcionProfesional, descripcionPaciente,
-    //   etiquetas, img, videoLink, infoLink })
+    // Pendiente de entrega. Forma: { titulo, estado, descripcionProfesional,
+    // descripcionPaciente, etiquetas, img, videoLink, infoLink }.
     estudios: [],
   },
 };

@@ -68,7 +68,9 @@ Los datos que varían por sucursal — estudios clínicos, equipo, contacto/dire
 
 Los estudios de Concepción se reconstruyeron a partir de los Word del cliente en `documentos_estudios_concepcion/` (versión julio 2026), que son la fuente de verdad del contenido clínico. Ese directorio está en `.gitignore`.
 
-Dentro de `estudios` los registros van agrupados por documento de origen, con un comentario de cabecera por grupo. `img` y `videoLink` NO vienen en los Word: se conservan de lo ya publicado, así que si rehaces la importación, arrástralos en lugar de regenerarlos.
+Dentro de `estudios` los registros van agrupados por especialidad, en el mismo orden que el selector de filtros de `js/estudios.js` (Oncología, Cardiología, Hematología, Broncopulmonar, Medicina), con un comentario de cabecera por grupo.
+
+**Vocabulario de `estado`:** solo `RECLUTAMIENTO ACTIVO` y `RECLUTAMIENTO CERRADO`. Los Word alternan entre "ACTIVO" y "ABIERTO" según la especialidad; al importar, normaliza a `RECLUTAMIENTO ACTIVO` todo lo que recluta. `img` y `videoLink` NO vienen en los Word: se conservan de lo ya publicado, así que si rehaces la importación, arrástralos en lugar de regenerarlos.
 
 Al final del arreglo hay un bloque rotulado **SIN RESPALDO EN LOS DOCUMENTOS DE JULIO 2026** con cuatro estudios cerrados que siguen publicados pero no aparecen en los Word. Están a la espera de que el cliente confirme si se retiran. No los borres sin esa confirmación.
 
@@ -101,16 +103,15 @@ python3 -m http.server 8000
 
 ## Pendiente
 
-La sucursal de **Chillán** está creada y funcionando. Su dirección ya es la definitiva (18 de Septiembre 246, of. 916). Sigue pendiente en `js/data/sedes.js`:
+La sucursal de **Chillán** está creada y funcionando. Al 22-09-2026 la dirección es **todo** lo que el cliente tiene de ella; el resto llegará más adelante. Eso no es un pendiente que bloquee nada: la página está construida para funcionar así.
 
-- `telefono` / `telefonoHref` — en `null`. **No los rellenes con el número de Concepción.**
-- `email` y `formulario` — hoy usan los corporativos; falta confirmar si Chillán tiene propios.
-- `equipo` y `estudios` — arreglos vacíos.
-- `mapsUrl` — es una búsqueda por dirección; sustituir por la ficha de Google Maps del centro cuando exista.
+- `telefono` / `telefonoHref` en `null` → `sede.js` y `linktree.js` **omiten** esa fila. **No los rellenes con el número de Concepción**: un teléfono equivocado manda al paciente al centro que no es. Si añades otro campo de contacto, mantén ese criterio.
+- `email` y `formulario` son los corporativos de BIOCENTER, compartidos por ambas sucursales.
+- `equipo` y `estudios` vacíos → las páginas muestran estados vacíos explícitos.
+- `mapsUrl` es una búsqueda por dirección; se puede sustituir por la ficha de Google Maps del centro si llega a existir.
+- La dirección se guarda tal como la entregó el cliente. **No infieras el piso** a partir del número de oficina.
 
 **No inventes personal clínico ni estudios de investigación**: espera los datos reales del cliente.
-
-Los campos de contacto en `null` hacen que `sede.js` y `linktree.js` **omitan** esa fila, en vez de mostrar el dato de la otra sucursal. Si añades un campo de contacto nuevo, mantén ese criterio: mostrar el teléfono equivocado manda al paciente al centro que no es.
 
 ## Deuda conocida y gotchas
 
