@@ -1556,3 +1556,332 @@ footer {
   color: #f7f9f9;
   border-radius: 20px;
 }
+
+/* ==========================================================================
+   SUCURSALES (SEDES)
+   Estilos añadidos para la versión de doble sucursal: la portada selectora
+   (index.html), el distintivo de sucursal del header y los estados vacíos.
+   Usa exclusivamente los tokens ya existentes: #f7f9f9, #5a9c9f, #78d5d7,
+   #373737, Poppins, radios de 20/25px y la sombra 0px 2px 4px rgba(196,209,215,.3).
+   ========================================================================== */
+
+/* --- Distintivo de sucursal en el header de cada sede --- */
+
+header .logo {
+  gap: 15px;
+}
+
+.sede_badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #f7f9f9;
+  border: solid 1px #9ecdce;
+  color: #5a9c9f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 300ms;
+}
+
+.sede_badge:hover {
+  background-color: #78d5d7;
+  border-color: #78d5d7;
+  color: #f7f9f9;
+}
+
+.sede_badge span.material-symbols-outlined {
+  font-size: 18px;
+}
+
+.sede_badge_caret {
+  opacity: 0.7;
+}
+
+/* --- Estados vacíos (sucursal sin datos cargados aún) --- */
+
+.equipo_vacio {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 60px 20px;
+  text-align: center;
+  color: #373737;
+}
+
+.equipo_vacio span {
+  font-size: 70px;
+  color: #78d5d7;
+}
+
+.equipo_vacio p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.estudios_sede_hint {
+  margin-top: -25px;
+  margin-bottom: 35px;
+  color: #5a9c9f;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Portada selectora de sucursal (index.html) --- */
+
+.linktree_body {
+  background: rgb(98, 177, 179);
+  background: linear-gradient(
+    351deg,
+    rgba(98, 177, 179, 1) 54%,
+    rgba(120, 213, 215, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+.linktree {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container_linktree {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.linktree_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.linktree_head img {
+  width: 220px;
+  max-width: 70%;
+}
+
+.linktree_claim {
+  margin-top: 20px;
+  color: #f7f9f9;
+  font-size: 25px;
+  font-weight: 300;
+  text-shadow: 0px 2px 4px rgba(83, 85, 86, 0.3);
+}
+
+.linktree_lead {
+  margin-top: 30px;
+  color: #f7f9f9;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sedes_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sede_card {
+  flex: 1 1 380px;
+  max-width: 480px;
+  background-color: #f7f9f9;
+  border-radius: 25px;
+  padding: 35px 30px;
+  box-shadow: 0px 2px 4px rgba(83, 85, 86, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.sede_card_head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sede_card_head span {
+  font-size: 40px;
+  color: #78d5d7;
+}
+
+.sede_card_head h2 {
+  color: #5a9c9f;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sede_card_dir {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #373737;
+  font-size: 15px;
+}
+
+.sede_card_cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: #5a9c9f;
+  color: #f7f9f9;
+  font-size: 18px;
+  box-shadow: 0px 2px 4px rgba(196, 209, 215, 0.3);
+  transition: all 300ms;
+}
+
+.sede_card_cta:hover {
+  background-color: #78d5d7;
+  color: #373737;
+}
+
+.sede_card_cta span {
+  font-size: 20px;
+}
+
+.sede_card_link {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 30px;
+  border-radius: 20px;
+  border: solid 1px #9ecdce;
+  color: #5a9c9f;
+  font-size: 15px;
+  transition: all 300ms;
+}
+
+.sede_card_link:hover {
+  background-color: #78d5d7;
+  border-color: #78d5d7;
+  color: #f7f9f9;
+}
+
+.sede_card_link span {
+  font-size: 20px;
+}
+
+.sede_card_acciones {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: solid 1px #e0e2e2;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sede_card_acciones a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 6px;
+  border-radius: 20px;
+  color: #373737;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.sede_card_acciones a:hover {
+  background-color: #e0e2e2;
+}
+
+.sede_card_acciones span {
+  font-size: 28px;
+  color: #5a9c9f;
+}
+
+.sede_card_acciones small {
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.linktree_rrss {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linktree_rrss h3 {
+  color: #f7f9f9;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(83, 85, 86, 0.3);
+  margin-bottom: 25px;
+}
+
+.linktree_rrss .container_icons {
+  padding: 0px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.linktree_rrss .container_icons i {
+  font-size: 35px;
+}
+
+.linktree_footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.linktree_footer p {
+  color: #f7f9f9;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .sede_badge span:not(.material-symbols-outlined),
+  .sede_badge_caret {
+    display: none;
+  }
+
+  .sede_badge {
+    padding: 6px 8px;
+  }
+
+  .linktree_head img {
+    width: 170px;
+  }
+
+  .linktree_claim {
+    font-size: 20px;
+  }
+
+  .sede_card_head h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sede_card {
+    padding: 25px 20px;
+  }
+
+  .sede_card_acciones {
+    flex-direction: column;
+  }
+
+  .sede_card_acciones a {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+  }
+}
