@@ -34,6 +34,8 @@ const SEDES = {
     ciudad: "Concepción, Chile",
     home: "./concepcion.html",
     estudiosPagina: "./concepcion-estudios.html",
+    // Fondo de la tarjeta en el selector de sucursal (index.html).
+    fondo: "./img/sedes/concepcion-udec.jpg",
     contacto: {
       direccion: "Lincoyán 334, piso 7. Concepción",
       mapsUrl: "https://goo.gl/maps/DLA9LBs4oufcphHK9",
@@ -559,6 +561,8 @@ const SEDES = {
     ciudad: "Chillán, Chile",
     home: "./chillan.html",
     estudiosPagina: "./chillan-estudios.html",
+    // Fondo de la tarjeta en el selector de sucursal (index.html).
+    fondo: "./img/sedes/chillan-catedral.jpg",
     contacto: {
       // Tal como lo entregó el cliente. No se infiere el piso a partir del
       // número de oficina: no lo sabemos.

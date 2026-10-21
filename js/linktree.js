@@ -21,8 +21,14 @@
 
   function tarjetaSede(sede) {
     const c = sede.contacto;
+    /* Foto de la ciudad en la parte alta de la tarjeta, desvanecida hacia el
+       fondo claro (ver .sede_card_fondo en style.css). Sin foto, no se dibuja. */
+    const fondo = sede.fondo
+      ? `<div class="sede_card_fondo" style="background-image: url('${sede.fondo}')" aria-hidden="true"></div>`
+      : "";
     return `
-      <article class="sede_card">
+      <article class="sede_card${sede.fondo ? " sede_card_con_fondo" : ""}">
+        ${fondo}
         <header class="sede_card_head">
           <span class="material-symbols-outlined">apartment</span>
           <h2>${sede.nombre}</h2>
