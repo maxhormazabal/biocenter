@@ -1474,6 +1474,12 @@ footer {
   background-color: #f7f9f9;
 }
 
+/* El logo de Chillán es más alto (lleva "Chillán" debajo): se achica para
+   caber en el header reducido de 70px. */
+body[data-sede="chillan"] .nav_mod .logo img {
+  width: 120px;
+}
+
 .move_content {
   right: 200px;
 }
